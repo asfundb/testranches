@@ -1,1 +1,818 @@
-{"sections":{"hero_banner_AJ7peC":{"type":"hero-banner","disabled":true,"settings":{"title":"GET READY FOR WINTER","description":"Shop our selection of women's jackets, now on sale","button_text":"Shop now","button_link":"shopify:\/\/collections\/get-ready-for-winter-sale-1","background_image":"shopify:\/\/shop_images\/0Q5A6606-Edit_298d9b7d-e087-4a31-a327-fa6e75cd59ad.jpg","title_second":"FEATURED COLLECTION","description_second":"Men's jackets on sale in our Get Ready for Winter collection","button_text_second":"Shop now","button_link_second":"shopify:\/\/collections\/get-ready-for-winter-sale","background_image_second":"shopify:\/\/shop_images\/Pixelcut_Upscaler_Export.png","mobile_title_size":20,"desktop_title_size":48,"description_size":16,"button_size":16,"title_color":"#000000","description_color":"#000000","button_color":"#000000"}},"hero_banner_hdTJRi":{"type":"hero-banner","disabled":true,"settings":{"title":"","description":"","button_text":"Shop Women's","button_link":"shopify:\/\/collections\/get-ready-for-winter-sale-1","background_image":"shopify:\/\/shop_images\/0Q5A6606-Edit_44658de0-d2e0-418c-9be1-32c881568661.webp","title_second":"FEATURED COLLECTION","description_second":"","button_text_second":"Shop Men's","button_link_second":"shopify:\/\/collections\/get-ready-for-winter-sale","background_image_second":"shopify:\/\/shop_images\/0Q5A0602-Edit.webp","mobile_title_size":20,"desktop_title_size":48,"description_size":16,"button_size":16,"title_color":"#000000","description_color":"#000000","button_color":"#000000"}},"image_banner":{"type":"image-banner","blocks":{"button":{"type":"buttons","settings":{"button_label_1":"SHOP NOW","button_link_1":"https:\/\/weiswesternwear.com\/collections\/winter-jacket-blowout","button_style_secondary_1":true,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["button"],"settings":{"banner_title":"Winter Jacket Blowout Sale","banner_subtitle":"Shop our sale jackets that combine functionality and classic style from top brands like Kimes Ranch, Outback Trading, Cinch and more!","image":"shopify:\/\/shop_images\/0Q5A0304-Edit-Edit.jpg","image_overlay_opacity":30,"image_height":"large","desktop_content_position":"bottom-center","show_text_box":false,"desktop_content_alignment":"center","color_scheme":"inverse","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":false,"show_text_below":false}},"brands_selection_9eqYwt":{"type":"brands-selection","blocks":{"brand_bUb4kA":{"type":"brand","settings":{"brand_name":"Ariat","brand_subtext":"Western","logo_image":"shopify:\/\/shop_images\/Ariat_d92e1961-91fc-4748-a217-14c015a6469a.svg","logo_background_color":"#000000","vendor_link":"shopify:\/\/collections\/ariat"}},"brand_Wqr8Cz":{"type":"brand","settings":{"brand_name":"Carhartt","brand_subtext":"Work","logo_image":"shopify:\/\/shop_images\/Carhartt.svg","logo_background_color":"#000000","vendor_link":"shopify:\/\/collections\/carhartt"}},"brand_KhJiKD":{"type":"brand","settings":{"brand_name":"Boulet","brand_subtext":"Western","logo_image":"shopify:\/\/shop_images\/Boulet.svg","logo_background_color":"#000000","vendor_link":"shopify:\/\/collections\/boulet"}},"brand_wWJcxj":{"type":"brand","settings":{"brand_name":"Wrangler","brand_subtext":"Western","logo_image":"shopify:\/\/shop_images\/Wrangler.svg","logo_background_color":"#000000","vendor_link":"shopify:\/\/collections\/wrangler"}},"brand_LwW6Ay":{"type":"brand","settings":{"brand_name":"Cinch","brand_subtext":"Western","logo_image":"shopify:\/\/shop_images\/Cinch.svg","logo_background_color":"#000000","vendor_link":"shopify:\/\/collections\/cinch"}},"brand_cmqpMe":{"type":"brand","settings":{"brand_name":"Irish Setter","brand_subtext":"Work","logo_image":"shopify:\/\/shop_images\/Irish_Setter.svg","logo_background_color":"#000000","vendor_link":"shopify:\/\/collections\/irish-setter"}},"brand_J7Wm4V":{"type":"brand","settings":{"brand_name":"Kimes Ranch","brand_subtext":"Casual","logo_image":"shopify:\/\/shop_images\/Kimes_Ranch.svg","logo_background_color":"#000000","vendor_link":"shopify:\/\/collections\/kimes-ranch"}},"brand_GwitjE":{"type":"brand","settings":{"brand_name":"Lucchese","brand_subtext":"Western","logo_image":"shopify:\/\/shop_images\/Lucchese.svg","logo_background_color":"#000000","vendor_link":"shopify:\/\/collections\/lucchese"}}},"block_order":["brand_bUb4kA","brand_Wqr8Cz","brand_KhJiKD","brand_wWJcxj","brand_LwW6Ay","brand_cmqpMe","brand_J7Wm4V","brand_GwitjE"],"settings":{"show_view_all":true,"view_all_text":"View All Brands","view_all_link":"https:\/\/weiswesternwear.com\/collections"}},"featured_by_style_xp6THd":{"type":"featured-by-style","settings":{"title":"BEST SELLERS","mens_casual":"mens-best-seller","mens_work":"mens-work-best-seller","mens_western":"mens-western-best-seller","womens_casual":"womens-casual-best-seller","womens_work":"womens-work-best-seller","womens_western":"womens-western-best-seller"}},"category_selection_kdLdKW":{"type":"category-selection","blocks":{"category_P7GCah":{"type":"category","settings":{"category_name":"JEANS","category_image":"shopify:\/\/shop_images\/jeans_81aca8ec-2783-43b2-8c94-0e693dc221a3.png","image_position_x":50,"image_position_y":27,"category_link":"shopify:\/\/collections\/mens-jeans"}},"category_eYUJBT":{"type":"category","settings":{"category_name":"WORK","category_image":"shopify:\/\/shop_images\/Work_Boots1.png","image_position_x":42,"image_position_y":47,"category_link":"shopify:\/\/collections\/work-wear"}},"category_D3xRFF":{"type":"category","settings":{"category_name":"JACKETS","category_image":"shopify:\/\/shop_images\/Outerwear_Men.png","image_position_x":39,"image_position_y":8,"category_link":"shopify:\/\/collections\/outerwear"}},"category_rrjaey":{"type":"category","settings":{"category_name":"CASUAL","category_image":"shopify:\/\/shop_images\/Casual_Men_s.png","image_position_x":57,"image_position_y":55,"category_link":"shopify:\/\/collections\/casual-wear"}}},"block_order":["category_P7GCah","category_eYUJBT","category_D3xRFF","category_rrjaey"],"settings":{}},"rich_text_hip9zB":{"type":"rich-text","blocks":{"heading_xe3inG":{"type":"heading","settings":{"heading":"<strong>The Latest from our Experts<\/strong>","heading_size":"h1"}}},"block_order":["heading_xe3inG"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"","full_width":true,"padding_top":40,"padding_bottom":0}},"featured_single_blog_Y9ejn4":{"type":"featured-single-blog","settings":{"blog":"articles","padding_top":36,"padding_bottom":36}},"550d49f4-7f1e-4914-af8c-ec59f7114d39":{"type":"spacer","disabled":true,"custom_css":[],"settings":{"margin_top":36,"margin_bottom":0,"margin_x":0,"divider_color":"#f0f0f0"}},"featured_collection":{"type":"featured-collection","disabled":true,"settings":{"title":"SHOP BEST SELLERS","heading_size":"h2","description":"","show_description":false,"description_style":"body","collection":"carhartt","products_to_show":16,"columns_desktop":4,"full_width":true,"show_view_all":false,"view_all_style":"solid","enable_desktop_slider":true,"color_scheme":"background-1","image_ratio":"square","image_shape":"default","show_secondary_image":true,"show_vendor":true,"show_rating":false,"enable_quick_add":true,"show_full_collection":true,"columns_mobile":"2","swipe_on_mobile":true,"padding_top":32,"padding_bottom":36,"show_filters":false,"brand_filter_1":"ARIAT","brand_filter_2":"WRANGLER","brand_filter_3":"KIMES RANCH","brand_filter_4":"OUTBACK TRADING COMPANY","brand_filter_5":"MWG"}},"0f3ffb0f-e8ea-4142-b006-188f1b3c6d92":{"type":"spacer","disabled":true,"settings":{"margin_top":0,"margin_bottom":36,"margin_x":0,"divider_color":"#f0f0f0"}},"93b21139-27a4-478c-96ed-f16c855a6ba4":{"type":"image-with-text","blocks":{"template--21465692832025__93b21139-27a4-478c-96ed-f16c855a6ba4-heading-1":{"type":"heading","settings":{"heading":"KIMES RANCH OLIVIA","heading_size":"h1"}},"template--21465692832025__93b21139-27a4-478c-96ed-f16c855a6ba4-text-1":{"type":"text","settings":{"text":"<p>Discover the perfect blend of style and comfort with Kimes Ranch Olivia Jeans – our best-seller for a reason!<\/p>","text_style":"body"}},"template--21465692832025__93b21139-27a4-478c-96ed-f16c855a6ba4-button-1":{"type":"button","settings":{"button_label":"SHOP NOW","button_link":"https:\/\/weiswesternwear.com\/products\/kimes-ranch-women-s-olivia-jean","button_style_secondary":false}}},"block_order":["template--21465692832025__93b21139-27a4-478c-96ed-f16c855a6ba4-heading-1","template--21465692832025__93b21139-27a4-478c-96ed-f16c855a6ba4-text-1","template--21465692832025__93b21139-27a4-478c-96ed-f16c855a6ba4-button-1"],"disabled":true,"custom_css":[".image-with-text__media img {object-fit: contain;}",".image-with-text .button {background-color: #870c16;}",".image-with-text__texT {width: 750px;}"],"settings":{"image":"shopify:\/\/shop_images\/AC4A9421.jpg","height":"adapt","desktop_image_width":"medium","layout":"image_first","desktop_content_position":"top","desktop_content_alignment":"left","content_layout":"no-overlap","color_scheme":"","image_behavior":"none","mobile_content_alignment":"center","padding_top":16,"padding_bottom":16}},"aab2bd51-0a60-443a-b4d9-89c8d7352b70":{"type":"test","disabled":true,"custom_css":[".brands-slider__carousel {padding: 0px 10px;}"],"settings":{"vendor_1_image":"shopify:\/\/shop_images\/Fall_Photos-44.jpg","vendor_1":"CARHARTT","vendor_2_image":"shopify:\/\/shop_images\/Fall_Photos-02.jpg","vendor_2":"ARIAT","vendor_3_image":"shopify:\/\/shop_images\/STS-RANCH.svg","vendor_3":"STS-RANCHWEAR","vendor_4_image":"shopify:\/\/shop_images\/Fall_Photoshoot-124.jpg","vendor_4":"WRANGLER","vendor_5_image":"shopify:\/\/shop_images\/LEVIS.svg","vendor_5":"LEVIS"}},"50ae63a2-5321-4780-a534-dfd2a95d8730":{"type":"spacer","disabled":true,"settings":{"margin_top":36,"margin_bottom":0,"margin_x":0,"divider_color":"#f0f0f0"}},"b78c655d-23ab-46b9-bf19-580e37aa192d":{"type":"test2","disabled":true,"custom_css":["h2 {font-size: 32px;}"],"settings":{"style_1_image":"shopify:\/\/shop_images\/Spring_Photoshoot-39.webp","style_1_image_title":"WESTERN","style_1_title":"WESTERN","style_1_url":"collections\/western-shirts","style_2_image":"shopify:\/\/shop_images\/133A5666-2.webp","style_2_image_title":"WORK","style_2_title":"WORK","style_2_url":"collections\/work-wear","style_3_image":"shopify:\/\/shop_images\/Spring_Photoshoot-102.webp","style_3_image_title":"CASUAL","style_3_title":"CASUAL","style_3_url":"https:\/\/weiswesternwear.com\/collections\/casual-wear"}},"cadfa1fb-7970-4bba-a5f5-bca38386b6d8":{"type":"spacer","disabled":true,"settings":{"margin_top":36,"margin_bottom":0,"margin_x":0,"divider_color":"#f3f3f3"}},"e169fd4b-312b-44b7-9b25-08306243ac4a":{"type":"featured-collection","disabled":true,"settings":{"title":"FEATURED WORK WEAR","heading_size":"h2","description":"","show_description":false,"description_style":"body","collection":"work-wear","products_to_show":8,"columns_desktop":4,"full_width":true,"show_view_all":false,"view_all_style":"solid","enable_desktop_slider":true,"color_scheme":"","image_ratio":"square","image_shape":"default","show_secondary_image":true,"show_vendor":true,"show_rating":false,"enable_quick_add":true,"show_full_collection":false,"columns_mobile":"2","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36,"show_filters":true,"brand_filter_1":"ARIAT","brand_filter_2":"CARHARTT","brand_filter_3":"","brand_filter_4":"","brand_filter_5":""}},"reviews_thPF4Q":{"type":"reviews","custom_css":[".reviews-slider__button {border-radius: 10px;}"],"settings":{}},"39e57f68-f893-416b-a505-5f22ddc473ce":{"type":"spacer","settings":{"margin_top":0,"margin_bottom":40,"margin_x":0,"divider_color":"#f0f0f0"}},"rich_text_67EFqW":{"type":"rich-text","blocks":{"heading_8RmeCa":{"type":"heading","settings":{"heading":"CUSTOMER REVIEWS","heading_size":"h2"}}},"block_order":["heading_8RmeCa"],"disabled":true,"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"","full_width":true,"padding_top":40,"padding_bottom":0}},"673afbb3-8075-436b-b881-abcb5f4efb43":{"type":"image-with-text","blocks":{"a59bb7fe-327a-4643-81b4-4d5b864a2d54":{"type":"heading","settings":{"heading":"COWBOY BOOTS","heading_size":"h1"}},"2b53875f-93a9-4d2a-9f88-6052518c51e5":{"type":"text","settings":{"text":"<p>From tested cowboys to first time rodeo-goers, we have the western gear for you.<\/p>","text_style":"body"}},"d46cb050-4846-43b7-ad46-afe55bb30f63":{"type":"button","settings":{"button_label":"SHOP WESTERN BOOTS","button_link":"shopify:\/\/collections\/cowboy-boots","button_style_secondary":false}}},"block_order":["a59bb7fe-327a-4643-81b4-4d5b864a2d54","2b53875f-93a9-4d2a-9f88-6052518c51e5","d46cb050-4846-43b7-ad46-afe55bb30f63"],"disabled":true,"custom_css":[".image-with-text__media img {object-fit: contain;}",".image-with-text .button {background-color: #870c16;}"],"settings":{"image":"shopify:\/\/shop_images\/0Q5A3338_4374fad9-54f9-4457-8bde-eb4f18210d87.webp","height":"adapt","desktop_image_width":"medium","layout":"image_first","desktop_content_position":"top","desktop_content_alignment":"left","content_layout":"no-overlap","color_scheme":"","image_behavior":"none","mobile_content_alignment":"center","padding_top":16,"padding_bottom":16}},"featured_by_style_8dpf6A":{"type":"featured-by-style","settings":{"title":"CLEARANCE","mens_casual":"mens-casual-clearance","mens_work":"mens-work-clearance","mens_western":"mens-western-clearance","womens_casual":"womens-casual-clearance","womens_work":"womens-work-clearance","womens_western":"womens-western-clearance"}},"6b6a33ea-30fa-445b-aedf-64cdd1457c77":{"type":"collapsible-content","blocks":{"template--21465692832025__6b6a33ea-30fa-445b-aedf-64cdd1457c77-collapsible_row-1":{"type":"collapsible_row","settings":{"is_product_review_tab":false,"heading":"IS WESTERN WEAR POPULAR","icon":"none","row_content":"<p>Western Wear is classic. It’s an identifiable look of clothing and footwear that says you are independent, you have strength, and you value your place in the heritage.<br\/><br\/>When you think about it, Western Wear has influenced clothing styles and culture across the world for more than 100 years. Now that's popular!<br\/><br\/>Here’s a small sample of Western Wear influence: the Western movies of Hollywood, since the 1920s. The bandanas and neckerchiefs worn by bikers, made famous by Hollywood’s movie The Wild One, starring Marlon Brando? Where did those kerchiefs and bandanas come from? What are the roots of motorcycle movie Easy Rider? Western Wear.<br\/><br\/>Where did 1970s rock stars borrow the idea to wear a long scarf? Where did the bandana worn by the lead singer for the Guns ‘N’ Roses rock band in the 1990s come from? Western Wear.<br\/><br\/>The “cowboy look” is known from Australia to Azerbaijan, and from Zurich to Zengzhou. It’s still very popular in the 21st Century. Wei’s Western wear fulfills customer wishes by sending parts of its legendary selection not only across Canada and the USA, but also to Asia Pacific and Europe.<\/p>","page":""}},"1a107f7f-7127-4bce-8ab1-f6670ed54c75":{"type":"collapsible_row","settings":{"is_product_review_tab":false,"heading":"WHAT IS INCLUDED IN A WESTERN WEAR OUTFIT?","icon":"none","row_content":"<p>You can embrace Western fashion while claiming your own style and resisting stereotypes because there are so many styles, colours and graphics available at Wei’s Western Wear, it’s easy to be yourself.<\/p><p>A head-to-toe Western wear outfit will include a visually commanding Western hat that keeps the sun and the snow off your head. You don’t have to water your horse with your “bucket hat” to enjoy Western hat style. Wei’s has dozens of styles by brands such as Stetson, Resistol, Seratelli, Bailey, Akubra and Outback. Check out the <a href=\"https:\/\/weiswesternwear.com\/pages\/hats-faq?_pos=1&_sid=c89822b83&_ss=r\" target=\"_blank\" title=\"Wei's Hat Size Guide\">Wei’s Hat Size Guide on this website<\/a>.<\/p><p>A Cowboy Hat usually has small holes to help release any perspiration and promote air circulation. The hat brim is about 3 inches but could be wider, and the hat’s fit on your head is mid-profile but could be taller, such as the famous Ten Gallon Hat.<\/p><p>On your feet, a pair of cowboy boots that fit as cleanly and securely as a second skin. At the very beginning in 1956, Wei’s was Wei Mah, a talented boot repairman who catered to customers from across Alberta. We have 65 years of knowing about cowboy boots. What would you like to know?<\/p><p>To learn more, check out the <strong>cowboy boot illustration<\/strong> courtesy of our friends at Lucchese, one of the earliest American manufacturers of cowboy boots.<\/p><p>The rest of your Western wear outfit is your shirt, maybe a vest, your pants and a good belt, and yes, cowboys do wear socks and underwear and sometimes a little jewelry.<\/p>","page":""}},"template--21465692832025__6b6a33ea-30fa-445b-aedf-64cdd1457c77-collapsible_row-2":{"type":"collapsible_row","settings":{"is_product_review_tab":false,"heading":"WHAT MAKES A GREAT SHIRT FOR WESTERN WEAR OUTFIT?","icon":"none","row_content":"<p>Want to know why one shirt costs $29 and another shirt costs $89 or more? The difference is likely in the design as well as the quality of the material. <\/p><p>The design elements of a Western shirt are influenced by practical considerations such as fit and comfort.  The quality of material needs no mention, you can feel the difference when you come in-store.  If you are shopping online, look for 100% cotton or blends from your favourite brands, including Wrangler, Ariat, Cinch, or more.<\/p>","page":""}},"template--21465692832025__6b6a33ea-30fa-445b-aedf-64cdd1457c77-collapsible_row-3":{"type":"collapsible_row","settings":{"is_product_review_tab":false,"heading":"WHY DO WESTERN WEAR SHIRTS HAVE SNAPS?","icon":"none","row_content":"<p>Western shirt design features may include snaps instead of buttons – why? Because snaps come off in an instant, with one hand, and won’t get hung up on something at the wrong moment.<\/p><p>When you’re hanging onto a galloping horse, a split second can make a big difference.<\/p><p>Besides practicality, let’s face it, snaps are cool.<\/p><p>Most snaps can be pearly white or black. Some brands such as Scully are known for intricate designs on their snaps. Many of the Scully shirts carried by Wei’s are works of art.<\/p><p>A longer cuff with more snaps or buttons is more stylish and formal.<\/p><p>The more buttons or snaps on a cuff, the more fitted the cuff will be on your wrist and arm. You would not want to fasten and unfasten several buttons on each arm. Snaps would be much easier.<\/p><p>A regular cuff, especially with just one button, is more casual. The number of buttons or snaps also impacts the price.<\/p>","page":""}},"template--21465692832025__6b6a33ea-30fa-445b-aedf-64cdd1457c77-collapsible_row-4":{"type":"collapsible_row","settings":{"is_product_review_tab":false,"heading":"CAN WESTERN WEAR BE WORN FOR WORK?","icon":"none","row_content":"<p>Whether you’re working on the farm, in the trades, in the field or in a shop, driving a truck, or working in a retail store like Wei’s, denim is the default. Of course if you’re working at home anything goes, so why not go for the easy comfort of Western wear? Keep it simple. <\/p><p>The core of Western wear is jeans. Denim provides warmth and protection, and styles have pockets for your necessities.the heavier fabric weights are pretty rugged. In fact, Wei’s has your denim needs covered for all 4 seasons with jeans from lightweight 9 oz all the way up to heavyweight 14.25oz, which are pretty rugged.<\/p><p>Most fabric weights have optional stretch fabric worn right in to provide ease of movement. Some fabric weaves including twill resist tearing and a ‘rip stop’ weave is made for rugged work. If you’re working in the field and insulation is on your mind, Wei’s has fleece denim styles from Carhartt and Wrangler to keep you toasty while you’re in the elements.   <\/p><p>Even at the office, ’blue jean Fridays” are common and jeans are given the ‘thumbs up’. There are very few workplaces where jeans are not welcome and did you know, most bosses even wear jeans! <\/p><p>So keep your Western pants handy, and get ‘em washed and dried. Don’t even think about ironing or dry-cleaning, because it’s just not needed. If you forgot your Western pants and shirt under a pile and they became more wrinkly than you’d like, let the clothes dryer be your friend. Just throw your clothes in, enjoy your coffee, come back and they’re done, and you’re ready. That’s part of the beauty of Western wear clothing. Keep it simple.<\/p><p>If you need to adhere to a ‘business casual’ rule, you can still bring Western style to your workplace. Wei’s has Western pants and shirts that meet the need for Western wear style. Our Wrangler Wranchers are a dressier poly pant that includes a crease, and come in several different colours. Wranchers look smart and they’re really comfortable, including a little stretch. Wei’s also carries Dickies lighter-weight pants that are great for warehouse or casual office work. Pair any of these with a Western belt and a great shirt, and you’re sticking to what’s true for you.<\/p><p>Have you been to Wei’s stores? When you come looking for a Western shirt, you might just be amazed are our rows and rows of Cinch, Ariat, Wrangler, Roper, Stetson, Panhandle Slim, Scully and more brands, in sizes from Small all the way to 5X in some styles.<\/p><p>These brands have held true to their Western heritage and also brought in some modern touches and new clothing technologies. Wei’s stocks shirts in vibrant colours, modern designs and comfort-fitting fabrics while being unmistakably Western. It’s not your Grandpa’s Western wear anymore, unless you want it that way - we do have original fit shirts, traditional designs, and 100% cotton fabrics.<\/p><p>When you’re choosing from hundreds of shirts, you’re going to find some you like in the size you need in our legendary selection. These shirt styles are often seasonal, meaning the manufacturers have limited runs and re-ordering may not be possible.<\/p><p>Shirt styles move quickly and Wei’s is constantly trying to get new stock on our website, so please check back to see what’s new. We want you to have the shirt you want to show your Western style at work.<\/p><p>Ariat and Wrangler are two brands that have gone the extra mile, making Western fashion part of their Flame-Resistant shirt line-up. If you need FR, you can still have Western wear style. You’ll find these styles on our website, ready to be shipped to wherever you need them, at the camp or at the office.<\/p>","page":""}},"849bf75a-6deb-4d90-aa00-c36a852c4f58":{"type":"collapsible_row","settings":{"is_product_review_tab":false,"heading":"WHAT'S THE BEST OCCASION FOR WESTERN WEAR?","icon":"none","row_content":"<p>There are really only two occasions - also known as work and play - and Western Wear suits both occasions. <\/p><p>It’s not just cowboys who wear western wear. The vast majority of men and women own a pair of jeans (or two, or three) and a well-fitting long-sleeved shirt (or two, or three) that suits your personality. That’s the core of Western wear right there, almost from head to toe!<\/p><p>But it’s the accessories that make the difference, and identify you. What will take you to the cowboy groove is the boots and the hat. Yes - it’s really the footwear and headwear that make the difference! <\/p><p>First, the feet. Remember, cowboy boots have moved beyond having only pointed styles, since not everyone can wear them. Cowboy boots come in square toed and rounded toed styles. Some boots get closer to ‘biker’ styles and that’s why several bookmakers like Canada West, Boulet, even the venerable Lucchese, make boot styles that are solid, and might be plain except for some metal adornments, and emphasize a square toe. <\/p><p>At the other end of the spectrum, take a cowboy boot with a rounded toe and make it shorter, just above the ankle. Now you’ve got a ‘Romeo’ style, or the style of Blundstone boot that has been a trendsetter for decades. Yes, they have a few extras, such as a pull tab at the heel and some stretch fabric near to the ankle. These makers of short boots are pretty smart, making their boots easier to get on and get off. But at their core, you cold certainly argue it’s an offshoot of the family of cowboy boots. Bottom line, put on your jeans and shirt, then add your Blundstones or biker boots, and you’re pretty dang close to being a Westerner. <\/p><p>Now, the top part - the hat. Let’s face it, almost everyone has the need for a hat at some time of the year. The weather kind of demands that we go beyond homie and parka head coverings to something amore substantial and stylish. A hat - you need a hat. The question is do you want to wear something called a beanie, or do you want to wear a hat that fits your head, covers your head? A real hat deserves to be in the sentence ‘from head to toe’ - hey, that’s your hat and boots.<\/p><p>No doubt about it, a traditional Western hat is a working hat. It’s not just the fit, and it’s not just the style, it’s the purpose-made shape of the hat, and the key is the brim. The brim of the hat is what covers your face and neck from the rain and snow and sun. The workers in the fields all over the world have traditionally had wide-brimmed hats, because the hat is a treasure of any person who works with their hands. Too busy working hard to wipe off the sweat or rain? No problem, your hat keeps you dry. Riding in he mountains, looking for gold, and your horse is getting thirsty? It’s also known as a bucket hat. Don’t get squeamish on us. <\/p><p>Sure, the essential Cowboy hat style has been improved by adding a few well-placed holes to let some air circulate up there. And the brim could taper down, or curl up. It could be a 2.5 inch brim, or even a 3.5 inch brim. These are the functional questions anyone will ask (or might just think about).<\/p><p>Then, onto style. The hat can be pounced (shaped) in many ways to suit the personality of the hat wearer. A simple rounded top might suit some, but most hat wearers want a beveled top with one or two peaks, like a Stetson or a Serratelli. Want more of an adventurer look, or are you even a private eye kind of guy? Wei’s has you covered. Wei’s carries 10 different brands of Western hats, and any of them are good enough for a Cowboy. <\/p><p>This is why Western-style hats are inherently superior to ball caps. There - we said it. Sure, we like ball caps but Western Cowboy hats are much better-looking, and yep, they are more functional. Got a wet neck? You’ve probably been out in the rain wearing a ball cap.<\/p><p>On a Saturday night when there’s a community dance, it’s time for cowboys to shower a lot and dress up a little. Clean and shine the boots with mink oil. Put on fresh socks that are tall enough so cowboy boots will not chafe your calves. Wei's has Schaefer boots socks and other brands that are made for the purpose. Some cowboys tuck their pants inside their boots, like a traditional soldier’s attire.<\/p><p>Clean jeans, a good-looking belt and a big buckle. A western shirt. Sometimes a cravat, now often called a wild rag, which absorbs sweat at the neck and accentuates your head. Ready for any occasion.<\/p>","page":""}},"c4c2e998-43c7-4dbb-89dc-a22b9156045f":{"type":"collapsible_row","settings":{"is_product_review_tab":false,"heading":"WHY WEI'S WESTERN WEAR?","icon":"none","row_content":"<p>Wei’s ships Western wear clothing, boots, hats and more to every province, and across the USA. Customers are attracted by our great selection and reasonable prices.<\/p><p>At our stores, every day customers come in to browse through our western wear, work wear and casual wear. Many of these customers are passing through Red Deer, or they’ve made a special trip from Calgary or Edmonton to come to Wei’s. Some come from BC or Saskatchewan. We appreciate the time and effort they’ve invested to come and see our selection.<\/p><p>They tell us we have the best selection of cowboy boots, cowboy hats, and cowboy shirts. When we ask about their local stores, they laugh and point to what we have, and they say there’s no comparison. <\/p><p>They also come to Wei’s for the second-to-none selection of work boots, with more than 20 brands available. They come to find the right style and size of Western jeans - we have more than 100 Wrangler styles in stock! We also carry Cinch, Silver, Ariat, Rock&Roll, and other key brands.<\/p><p>We’re still working at getting all these items online, but you can always phone one of our stores to discuss the style and size you want. Check back to see the new items we’ve added, and the new arrivals we’re bringing in for you.<\/p>","page":""}},"738dd322-b12d-4c4e-9e05-7512c8b6e492":{"type":"collapsible_row","settings":{"is_product_review_tab":false,"heading":"WHAT'S THE MOST POPULAR BRAND OF WESTERN WEAR FOR MEN?","icon":"none","row_content":"<p>Wrangler is probably the biggest Western brand. But guess what, you could also say it’s the coolest. The chart-topping 2019 Country Music Award song Old Town Road, recorded by Lil Nas X with Billy Ray Cyrus, was followed with a clothing collection by Lil Nas X with… Wrangler. It’s fair to say anyone can call their favourite brand is coolest… but this music star chose Wrangler.<\/p><p>If you released one of the biggest country songs in the past 10 years, you can call yourself cool. <\/p><p>The Lil Nas X collection sold out quickly at Wrangler. While we don’t have a crystal ball, we’d say more collections will be coming. <\/p><p>We can’t mention the new without the original. About 20 years ago, country music superstar George Strait launched his Wrangler clothing collection.<\/p><p>George Strait styles are still one of Wrangler’s (and Wei’s) best-sellers.<\/p>","page":""}},"e039f618-822c-4e8c-ac70-aa05d297d996":{"type":"collapsible_row","settings":{"is_product_review_tab":false,"heading":"IS WESTERN WEAR CLOTHING IN STYLE?","icon":"none","row_content":"<p>Western Wear is timeless, in a style anyone can wear.  It’s always in style in North America, and is being discovered in Europe and Asia.<\/p><p>Why is that? Well, we think Western wear is Practical, Efficient and Direct.<\/p><p>Given its history as the original workwear, Western Wear clothing is more practical than other clothing styles. Your pants have 5 pockets, not 4 or 2, and the denim is more rugged and rip-resistant than non-Western styles. Your shirt pockets can snap shut to help keep important things inside those pockets. Cuffs are adjustable for warmth and fit. Of course your pants have belt loops. <\/p><p>Western wear is more efficient. Time to go somewhere? Slip on the boots, no laces here. Do up your shirt with a snap, snap, snap. Tuck in the shirt? Optional, of course. Bring a hat, no matter what weather, and you’ll be prepared for anything. Done.<\/p><p>When you think of the pointed yokes on the front or back of a shirt or jacket, or the squared-off corners on the corners of a pocket flap, they’re a little more pointed, a little more direct. What you see is what you get.<\/p><p>What about colours and designs? Pants are always plain. Blue or black are enough choices - okay, maybe tan for a hot Summer day. If it’s not machine washable, forget it. <\/p><p>But what goes on top of those plain pants has some life to it. Shirts have colour, and Wei’s has a great selection of Cinch, Artist, Wrangler, Roper and Panhandle western shirts, plus other brands. <\/p><p>When you want to blend in, blend in. Choose a small-checked plaid or design, or even paisley, to provide some colour. When you want to stand out, stand out. Western shirts have some of the wildest designs in fashion. Its Mexican heritage stands out with bold red, white, brown and black colours. Its Indigenous influences add variety with turquoise, yellow, orange and subdued greys, blues and off-whites. <\/p><p>Wei’s Western Wear has the styles and designs to suit you, whether you’re dressing for work or play, for any occasion. <\/p>","page":""}},"5ee1d5e9-57ab-4c94-ad7e-a0603bcf15d1":{"type":"collapsible_row","settings":{"is_product_review_tab":false,"heading":"IS WESTERN WEAR POPULAR INTERNATIONALLY","icon":"none","row_content":"<p>Yes. In Europe, Italian fashion houses have grabbed onto Western styles, “There’s something about a denim Western shirt or trucker jacket that’s just effortlessly cool right now,” says Italian designer Gauthier Borsarello in high lifestyle magazine <em>Robb Report<\/em>. <\/p><p>Has Wei’s shipped orders to Europe? The answer is yes, and we have lots of denim shirts and trucker jackets in stock for you. When you wear them you’ll know you are setting the trends for  Europeans. <\/p><p>Over in Tokyo, a menswear fashion house has a collection of “sawtooth” denim shirts with two front pockets with snaps, and snaps on the cuffs. Definitely Western wear. <\/p>","page":""}},"8e0ff685-88dc-4a38-9d2f-8107406ee0a6":{"type":"collapsible_row","settings":{"is_product_review_tab":false,"heading":"WHAT ARE SOME POPULAR BRANDS OF WESTERN WEAR FOR MEN?","icon":"none","row_content":"<p>A list of boot brands or hat brands would be different, but for Western Wear clothing, the most popular brands at Wei’s include Wrangler, Ariat, Cinch, Roper, Levi’s, and Panhandle. Kimes Ranch and Dale Brisby clothing styles are becoming more popular too. And brands like Silver and Rock&Roll are favourites of our customers, even though they may not be officially Western Wear.<\/p>","page":""}},"collapsible_row_bRbc9M":{"type":"collapsible_row","settings":{"is_product_review_tab":false,"heading":"WHAT ARE SOME OF THE SIMILARITIES BETWEEN MEN'S AND WOMEN'S WESTERN CLOTHING","icon":"none","row_content":"<p>Welcome to Wei's Western Wear, your one-stop destination for all things Western fashion! Let us delve into the captivating world of men's and women's western attire, highlighting similarities and differences. Whether you're a seasoned cowboy or just someone looking to embrace the timeless charm of Western style, this article is your ultimate source of inspiration.<\/p><p>Let's kick things off with a staple of western fashion: cowboy boots. For men, cowboy boots are a symbol of weathered elegance. Crafted from durable leather, these boots are designed for both style and functionality. The pointed toes and distinctive stitching patterns make them instantly recognizable. Pair them with jeans or dress them up for a formal occasion. Cowboy boots are incredibly versatile!<\/p><p>Denim is at the center of Western fashion, and men's wear is no exception. Men’s  jeans typically feature a straight leg or bootcut design, making it easy to wear them over boots. The denim material can withstand the toughest outdoor activities and also look great at a casual gathering.<\/p><p>Western shirts are characterized by their classic design elements. Snap buttons, pointed collars, and yokes are all common features. These shirts come in plaid, checkered, or solid colors. Whether you're on the ranch or out for a night on the town, a well-fitting shirt is a timeless choice.<\/p><p>Finally, men's Western wear wouldn't be complete without some essential accessories. Hats, belt buckles, and bolo ties are iconic pieces that add a touch of authenticity to any outfit. These accessories are both practical and stylish, making them an integral part of your wardrobe<\/p><p>Now that we’ve reviewed some typical choices for men, let’s explore the possibilities for women. <\/p><p>For women, boots are a beloved fashion choice. They are very similar to men's cowboy boots, but they often feature more decorative details, like embroidery, rhinestones, and vibrant colors. Women's boots are designed to embrace both tradition and elegance, making them a perfect choice for a variety of occasions.<\/p><p>One of the key differences of women's Western wear is that it includes skirts and dresses. These come in various lengths, from knee-length to ankle-length. They often feature playful patterns, floral prints, and fringed details, adding a feminine touch to your outfit.<\/p><p>Women's tops and blouses put a feminine twist to the traditional cowboy shirts.They are available  in a range of materials, including denim, cotton, and silk. Lace trims, ruffles, and tailored fits are all common elements.<\/p><p>To complete the look, women can choose Western-inspired jewelry and accessories. Silver and turquoise jewelry, concho belts, and stylish scarves are popular choices. These accessories not only add a touch of glamor, but they also allow you to express your personal style.<\/p><p>While there are notable differences between men's and women's Western clothing, they also share some common elements.<\/p><p>Cowboy hats are a common choice for both men and women. These hats provide protection from the sun, and serve as a symbol of Western identity.<\/p><p>In addition, denim is a popular material in Western clothing. Both men and women appreciate the durability and versatility of denim jeans, jackets, and shirts.<\/p><p>Stylish belts with intricate buckle designs are popular for both genders. They add a touch of allure to any outfit!<\/p><p>Leather is another cornerstone of Western fashion. Whether it's cowboy boots, belts, or jackets, everyone appreciates the durability and timeless appeal of leather.<\/p><p>In the world of Western fashion, men and women have a wide range of clothing options to choose from. While men's choices exude rugged charm and durability, women's options embrace tradition while adding a touch of elegance and femininity. Whether you're drawn to the timeless appeal of cowboy boots, the versatility of denim, or the allure of leather accessories, there's something for everyone!Saddle up and  express your unique style with Wei's Western Wear!<\/p><p>Explore our vast collection of men's and women's Western wear and discover the perfect outfit to elevate your fashion game. We're here to help you embrace the spirit of the Wild West with style and authenticity.<\/p>","page":""}},"collapsible_row_QwpAzR":{"type":"collapsible_row","settings":{"is_product_review_tab":false,"heading":"WHAT ARE SOME OF THE ESSENTIAL ARTICLES OF WESTERN CLOTHING?","icon":"none","row_content":"<p>Whether you're a seasoned cowboy or just someone looking to embrace the timeless charm of Western style, we've got you covered. Let us explore the essential pieces of Western clothing that you need  in your wardrobe. From boots to stylish hats, we'll highlight key items that define Western fashion.<\/p><p>Let's start with the cornerstone of Western wear: cowboy boots. These iconic pieces are stylish and incredibly practical. Crafted from high-quality leather, cowboy boots are designed to withstand the toughest of conditions while making a bold fashion statement. The pointed toes and distinctive stitching patterns are visually attractive, and they come in various styles, including traditional, exotic leather, and modern interpretations.<\/p><p>As you probably know, denim is the centerpiece of Western fashion. A well-fitting pair of denim jeans is an absolute must-have for anyone looking to embrace the Western style. Known for their durability and comfort, these jeans often feature a straight leg or bootcut design, making them easy to wear over cowboy boots. Available in classic blue and a variety of washes, denim jeans offer versatility and style.<\/p><p>Shirts are another essential part of Western fashion. These shirts are characterized by snap buttons, pointed collars, and yokes. They come in various materials, including denim, cotton, and flannel, offering both comfort and style. Whether you're on the ranch or hitting the town, a well-fitting Western shirt is a smart choice.<\/p><p>No Western look is complete without a classic cowboy hat. These iconic pieces not only provide protection from the elements, but they also add a touch of authenticity to your outfit. Cowboy hats come in a range of styles, from the traditional wide-brimmed hat to modern variations, like the cattleman and the gambler.<\/p><p>To truly embrace the Western aesthetic, consider adding some accessories to your outfit: <\/p><ul><li>Belts: Stylish belts with intricate buckle designs add the finishing touch to your outfit. They are stunning and work well.<\/li><li>Bolo Ties: Bolo ties are unique and eye-catching. They feature a decorative clasp and cords that hang down, adding a touch of flair to your clothes.<\/li><li>Bandanas and Scarves: These versatile accessories can be worn as neckties, headbands, or even as a stylish addition to your Western shirt. They come in various colors and patterns.<\/li><li>Leather Gloves: For a touch of practicality and style, consider leather gloves with Western detailing. They are perfect for outdoor activities and add a hardy edge to your look.<\/li><\/ul><p>Depending on the climate and occasion, outerwear can be essential. Consider adding these items to your wardrobe:<\/p><ul><li>Jackets: Whether it's classic denim, leather , or fringed suede, Western-inspired outerwear adds a layer of style and warmth to your look.<\/li><li>Vests: Vests are a versatile addition to your wardrobe. They can be worn over shirts or by themselves.<\/li><li>Ponchos and Serapes: These traditional garments provide warmth and a touch of Southwestern charm. They are perfect for cooler evenings and outdoor events.<\/li><\/ul><p>For women, the essential pieces include all of the items above, as well as: <\/p><ul><li>Cowgirl Boots: Similar to cowboy boots but often featuring more decorative details like embroidery, rhinestones, and vibrant colors.<\/li><li>Skirts and Dresses: Western-style skirts and dresses in various lengths, patterns, and fringed details that adda feminine touch.<\/li><li>Blouses and Tops: Tops and blouses that are inspired by traditional cowboy shirts but include feminine elements like lace trims, ruffles, and tailored fits.<\/li><li>Jewelry and Accessories:   Western-inspired jewelry like silver and turquoise pieces, concho belts, and stylish scarves <\/li><\/ul><p>These essential pieces form the foundation of a style that is both timeless and distinctive. Whether you're looking to embrace the rugged charm of cowboy boots, the versatility of denim, or the iconic appeal of cowboy hats, Wei's Western Wear has everything you need. Explore our vast collection and elevate your fashion game today. Embrace the spirit of the Wild West with style and personality.<\/p>","page":""}},"collapsible_row_EQLgj7":{"type":"collapsible_row","settings":{"is_product_review_tab":false,"heading":"CAN I WEAR WESTERN CLOTHING EVERY DAY, OR IS IT MAINLY FOR SPECIAL OCCASIONS?","icon":"none","row_content":"<p>At Wei's Western Wear, we believe that Western fashion isn't just reserved for special occasions. Western wear is a versatile and timeless style that can be effortlessly incorporated into your daily outfits. Let us  explore how to include Western wear in your wardrobe , debunking the myth that it's exclusively for specific occasions. From cowboy boots to denim jeans, we'll show you how to infuse the spirit of the Wild West into your daily life.<\/p><p>One of the key pieces of Western wear that you can easily adopt are the iconic cowboy boots. While traditionally associated with ranch work and rodeos, cowboy boots have evolved to become a stylish choice for everyday wear.<\/p><ul><li>Casual Chic: Pair your cowboy boots with a simple t-shirt and jeans for a casual yet fashionable look. The charm of the boots adds character to your outfit, perfect  for everything from errands to coffee dates.<\/li><li>Workwear: Depending on your workplace rules, boots can be a unique addition to your attire. Pair them with slacks or a skirt, and you'll stand out with a touch of Western flair.<\/li><li>Night Out: For a night on the town, up your game by wearing cowboy boots with a sleek dress or skirt. The contrast between your dress and boots will create a striking fashion statement.<\/li><\/ul><p>Jeans are a timeless staple that complement the Western aesthetic. They are comfortable, durable, and can be dressed up or down, making them perfect for everyday wear.<\/p><p>A well-fitting pair of denim jeans offers both style and comfort. Combine them with a Western shirt or a simple t-shirt for an informal yet stylish look.<\/p><p>In addition, many workplaces have begun to allow denim in the office. Choose a dark-wash, straight leg pair of Western-style jeans and pair them with a blazer and heels for a sophisticated look.<\/p><p>Western jeans are the ideal choice for a weekend getaway or a day of outdoor activities. Their durability and timeless style make them a practical choice for any adventure.<\/p><p>Western shirts are more than just a piece of clothing. They embody the spirit of the West while offering a stylish option for all your needs<\/p><p>For example, a classic Western shirt with snap buttons, pointed collars, and yokes is a fantastic addition to your wardrobe. Pair it with jeans, shorts, or skirts for a comfortable and classy outfit.<\/p><p>If your workplace has a relaxed dress code, you can incorporate a Western shirt into your office attire. Tuck it into slacks or a pencil skirt, and you'll strike the perfect balance between professional and stylish.<\/p><p>Western shirts are designed to be practical. You can wear one while hiking, camping, or enjoying outdoor activities. The breathable fabric and durable design make them an excellent choice.<\/p><p>Cowboy hats are often considered the ultimate symbol of Western style. While they may not be an everyday accessory for everyone, they can still add a unique flair to your look.<\/p><p>Don a cowboy hat when you're in the mood for a laid-back, casual look. Pair it with jeans and a t-shirt for a tasteful outfit.<\/p><p>Music festivals, outdoor events, and beach days are great opportunities to incorporate a cowboy hat into your outfit. After all, it provides protection against the sun and adds a touch of charm to your attire.<\/p><p>For those who love making a statement, wearing a cowboy hat on special occasions can be a bold choice. Whether it's a birthday celebration or a night out, a well-chosen hat can be the focal point of your outfit.<\/p><p>To complete your Western look, consider adding some key accessories:<\/p><ul><li>Belts: Stylish belts with intricate buckle designs can greatly improve your outfit. <\/li><li>Bolo Ties: Bolo ties are unique accessories that add a touch of charm to any outfit. Wear one with collared shirts or by itself to stand out.<\/li><li>Bandanas and Scarves: These versatile accessories can be worn as neckties or headbands. They come in a variety of colors and patterns to suit your style.<\/li><\/ul><p>Western wear shouldn’t be limited to special occasions or themed events. In the right pieces and with a dash of creativity, you can easily incorporate Western fashion into your wardrobe. Boots, denim jeans, Western shirts, cowboy hats, and accessories will allow you to infuse the spirit of the Wild West into your daily style. At Wei's Western Wear, we offer a wide range of authentic pieces to help you elevate your fashion with originality and flair.Embrace the Western style in your daily life!<\/p>","page":""}},"collapsible_row_NAHWqd":{"type":"collapsible_row","settings":{"is_product_review_tab":false,"heading":"ARE WESTERN WEAR AND COWBOY CLOTHING THE SAME THING?","icon":"none","row_content":"<p>The terms \"Western wear\" and \"cowboy clothing\" are often used interchangeably. However, there are differences between the two. In this guide, we will contrast these two styles. Whether you're a cowboy or just someone interested in Western fashion, this article will help you better understand each style.<\/p><p>Western wear includes a broad range of clothing and accessories inspired by the American West. Cowboy boots are undoubtedly a prominent part of this.  These boots, characterized by their pointed toes, distinctive stitching, and high-quality leather construction, are designed for both style and practicality.<\/p><p>Western boots are adaptable and can be worn by anyone. They are suitable for everyday use and can be paired with jeans, skirts, or dresses for a fashionable look.<\/p><p>Denim jeans, another iconic piece of Western wear, are known for their durability and comfort. These jeans typically feature a straight leg or bootcut design, making them easy to wear with cowboy boots. You can wear these jeans for both work and leisure.<\/p><p>Western-style jeans are a fashion staple and are not limited to cowboy attire. They come in a variety of washes and styles, which is why they’re a popular choice for both men and women.<\/p><p>Moreover, Western shirts are known for their unique design elements, such as snap buttons, pointed collars, and yokes. While they are a classic component of Western wear, they are also a popular choice for those looking to add a touch of flair to their wardrobe.<\/p><p>Western shirts can be worn as part of your everyday outfit. They come in a variety of materials, patterns, and colors, making them suitable for a range of preferences.<\/p><p>Furthermore, cowboy hats are strongly associated with Western fashion, but they are not limited to cowboy clothing. These hats come in various styles, including the traditional wide-brimmed cowboy hat, cattleman, and gambler hats. They provide protection against the protection and add a touch of flair to your outfit.<\/p><p>Western wear includes a variety of accessories that complement the aesthetic. These accessories, such as belts, bolo ties, bandanas, and leather gloves, are designed to add a touch of originality and style to your look. They are versatile and can be effortlessly incorporated into your wardrobe<\/p><p>Accessories allow for personal expression. Whether you're wearing them for a special occasion or as part of your daily attire, they can reflect your unique style.<\/p><p>Cowboy clothing, on the other hand, refers to the attire traditionally worn by cowboys working on ranches. While this style shares some similarities with Western wear, cowboy clothing is primarily rooted in practicality and function.<\/p><p>This attire is designed for the rigors of ranch life. It includes items like rugged boots, durable jeans, and functional shirts that can withstand the demands of outdoor labor.<\/p><p>Cowboy clothing tends to be more utilitarian and straightforward in design than Western wear.<\/p><p>Cowboy clothing is all about getting the job done. It prioritizes functionality over fashion, ensuring that cowboys can perform their tasks efficiently.<\/p><p>In summary, while Western wear and cowboy clothing share some elements, they serve different purposes and cater to distinct preferences. Western wear is a diverse style  that includes cowboy boots, denim jeans, shirts, cowboy hats, and various accessories. These items can be seamlessly integrated into your wardrobe.<\/p><p>On the other hand, cowboy clothing is rooted in tradition and functionality, designed specifically for the needs of ranchers and cowhands. It emphasizes practicality and durability, making it ideal for rugged outdoor work.<\/p><p>At Wei's Western Wear, we celebrate the rich heritage of Western fashion by offering a wide range of authentic Western wear and cowboy clothing. Whether you're looking to embrace this  aesthetic in your everyday fashion choices or you’re seeking practical clothes for ranch work, we have you covered. Explore our collection today and discover the perfect pieces to express your unique style!<\/p>","page":""}}},"block_order":["template--21465692832025__6b6a33ea-30fa-445b-aedf-64cdd1457c77-collapsible_row-1","1a107f7f-7127-4bce-8ab1-f6670ed54c75","template--21465692832025__6b6a33ea-30fa-445b-aedf-64cdd1457c77-collapsible_row-2","template--21465692832025__6b6a33ea-30fa-445b-aedf-64cdd1457c77-collapsible_row-3","template--21465692832025__6b6a33ea-30fa-445b-aedf-64cdd1457c77-collapsible_row-4","849bf75a-6deb-4d90-aa00-c36a852c4f58","c4c2e998-43c7-4dbb-89dc-a22b9156045f","738dd322-b12d-4c4e-9e05-7512c8b6e492","e039f618-822c-4e8c-ac70-aa05d297d996","5ee1d5e9-57ab-4c94-ad7e-a0603bcf15d1","8e0ff685-88dc-4a38-9d2f-8107406ee0a6","collapsible_row_bRbc9M","collapsible_row_QwpAzR","collapsible_row_EQLgj7","collapsible_row_NAHWqd"],"settings":{"caption":"","heading":"FAQ'S","heading_size":"h1","heading_alignment":"center","layout":"section","color_scheme":"","container_color_scheme":"","open_first_collapsible_row":false,"image_ratio":"adapt","desktop_layout":"image_second","padding_top":36,"padding_bottom":36}},"0e7c4410-d999-48db-be30-42d8f2b4e054":{"type":"testimonial","settings":{"quote1":"LOTS OF OPTIONS FOR COWBOY ATTIRE!","quote2":"GREAT SELECTION, GREAT PRICE, FAST SHIPPING","quote3":"AMAZING PEOPLE AND SO HELPFUL!","quote4":"THE BEST FOR CLOTHING IN CENTRAL ALBERTA"}},"1701191543aff2260c":{"type":"apps","settings":{"include_margins":true}}},"order":["hero_banner_AJ7peC","hero_banner_hdTJRi","image_banner","brands_selection_9eqYwt","featured_by_style_xp6THd","category_selection_kdLdKW","rich_text_hip9zB","featured_single_blog_Y9ejn4","550d49f4-7f1e-4914-af8c-ec59f7114d39","featured_collection","0f3ffb0f-e8ea-4142-b006-188f1b3c6d92","93b21139-27a4-478c-96ed-f16c855a6ba4","aab2bd51-0a60-443a-b4d9-89c8d7352b70","50ae63a2-5321-4780-a534-dfd2a95d8730","b78c655d-23ab-46b9-bf19-580e37aa192d","cadfa1fb-7970-4bba-a5f5-bca38386b6d8","e169fd4b-312b-44b7-9b25-08306243ac4a","reviews_thPF4Q","39e57f68-f893-416b-a505-5f22ddc473ce","rich_text_67EFqW","673afbb3-8075-436b-b881-abcb5f4efb43","featured_by_style_8dpf6A","6b6a33ea-30fa-445b-aedf-64cdd1457c77","0e7c4410-d999-48db-be30-42d8f2b4e054","1701191543aff2260c"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero_banner_AJ7peC": {
+      "type": "hero-banner",
+      "disabled": true,
+      "settings": {
+        "title": "GET READY FOR WINTER",
+        "description": "Shop our selection of women's jackets, now on sale",
+        "button_text": "Shop now",
+        "button_link": "shopify://collections/get-ready-for-winter-sale-1",
+        "title_second": "FEATURED COLLECTION",
+        "description_second": "Men's jackets on sale in our Get Ready for Winter collection",
+        "button_text_second": "Shop now",
+        "button_link_second": "shopify://collections/get-ready-for-winter-sale",
+        "mobile_title_size": 20,
+        "desktop_title_size": 48,
+        "description_size": 16,
+        "button_size": 16,
+        "title_color": "#000000",
+        "description_color": "#000000",
+        "button_color": "#000000",
+        "mobile_button_position": "end",
+        "desktop_content_position": "bottom-left-stack",
+        "description_style": "normal",
+        "description_weight": "200",
+        "button_style": "text",
+        "button_shape": "rounded",
+        "button_bg_color": "#000000",
+        "button_text_color": "#000000",
+        "button_hover_bg_color": "#333333",
+        "button_hover_text_color": "#FFFFFF"
+      }
+    },
+    "hero_banner_hdTJRi": {
+      "type": "hero-banner",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "description": "",
+        "button_text": "Shop Women's",
+        "button_link": "shopify://collections/get-ready-for-winter-sale-1",
+        "title_second": "FEATURED COLLECTION",
+        "description_second": "",
+        "button_text_second": "Shop Men's",
+        "button_link_second": "shopify://collections/get-ready-for-winter-sale",
+        "mobile_title_size": 20,
+        "desktop_title_size": 48,
+        "description_size": 16,
+        "button_size": 16,
+        "title_color": "#000000",
+        "description_color": "#000000",
+        "button_color": "#000000",
+        "mobile_button_position": "end",
+        "desktop_content_position": "bottom-left-stack",
+        "description_style": "normal",
+        "description_weight": "200",
+        "button_style": "text",
+        "button_shape": "rounded",
+        "button_bg_color": "#000000",
+        "button_text_color": "#000000",
+        "button_hover_bg_color": "#333333",
+        "button_hover_text_color": "#FFFFFF"
+      }
+    },
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "SHOP NOW",
+            "button_link_1": "https://weiswesternwear.com/collections/winter-jacket-blowout",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "button"
+      ],
+      "settings": {
+        "banner_title": "Winter Jacket Blowout Sale",
+        "banner_subtitle": "Shop our sale jackets that combine functionality and classic style from top brands like Kimes Ranch, Outback Trading, Cinch and more!",
+        "image_overlay_opacity": 30,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "inverse",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "brands_selection_9eqYwt": {
+      "type": "brands-selection",
+      "blocks": {
+        "brand_bUb4kA": {
+          "type": "brand",
+          "settings": {
+            "brand_name": "Ariat",
+            "brand_subtext": "Western",
+            "logo_background_color": "#000000",
+            "vendor_link": "shopify://collections/ariat"
+          }
+        },
+        "brand_Wqr8Cz": {
+          "type": "brand",
+          "settings": {
+            "brand_name": "Carhartt",
+            "brand_subtext": "Work",
+            "logo_background_color": "#000000",
+            "vendor_link": "shopify://collections/carhartt"
+          }
+        },
+        "brand_KhJiKD": {
+          "type": "brand",
+          "settings": {
+            "brand_name": "Boulet",
+            "brand_subtext": "Western",
+            "logo_background_color": "#000000",
+            "vendor_link": "shopify://collections/boulet"
+          }
+        },
+        "brand_wWJcxj": {
+          "type": "brand",
+          "settings": {
+            "brand_name": "Wrangler",
+            "brand_subtext": "Western",
+            "logo_background_color": "#000000",
+            "vendor_link": "shopify://collections/wrangler"
+          }
+        },
+        "brand_LwW6Ay": {
+          "type": "brand",
+          "settings": {
+            "brand_name": "Cinch",
+            "brand_subtext": "Western",
+            "logo_background_color": "#000000",
+            "vendor_link": "shopify://collections/cinch"
+          }
+        },
+        "brand_cmqpMe": {
+          "type": "brand",
+          "settings": {
+            "brand_name": "Irish Setter",
+            "brand_subtext": "Work",
+            "logo_background_color": "#000000",
+            "vendor_link": "shopify://collections/irish-setter"
+          }
+        },
+        "brand_J7Wm4V": {
+          "type": "brand",
+          "settings": {
+            "brand_name": "Kimes Ranch",
+            "brand_subtext": "Casual",
+            "logo_background_color": "#000000",
+            "vendor_link": "shopify://collections/kimes-ranch"
+          }
+        },
+        "brand_GwitjE": {
+          "type": "brand",
+          "settings": {
+            "brand_name": "Lucchese",
+            "brand_subtext": "Western",
+            "logo_background_color": "#000000",
+            "vendor_link": "shopify://collections/lucchese"
+          }
+        }
+      },
+      "block_order": [
+        "brand_bUb4kA",
+        "brand_Wqr8Cz",
+        "brand_KhJiKD",
+        "brand_wWJcxj",
+        "brand_LwW6Ay",
+        "brand_cmqpMe",
+        "brand_J7Wm4V",
+        "brand_GwitjE"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_view_all": true,
+        "view_all_text": "View All Brands",
+        "view_all_link": "https://weiswesternwear.com/collections"
+      }
+    },
+    "featured_by_style_xp6THd": {
+      "type": "featured-by-style",
+      "settings": {
+        "title": "BEST SELLERS",
+        "mens_casual": "mens-best-seller",
+        "mens_work": "mens-work-best-seller",
+        "mens_western": "mens-western-best-seller",
+        "womens_casual": "womens-casual-best-seller",
+        "womens_work": "womens-work-best-seller",
+        "womens_western": "womens-western-best-seller"
+      }
+    },
+    "category_selection_kdLdKW": {
+      "type": "category-selection",
+      "blocks": {
+        "category_P7GCah": {
+          "type": "category",
+          "settings": {
+            "category_name": "JEANS",
+            "image_position_x": 50,
+            "image_position_y": 27,
+            "category_link": "shopify://collections/mens-jeans"
+          }
+        },
+        "category_eYUJBT": {
+          "type": "category",
+          "settings": {
+            "category_name": "WORK",
+            "image_position_x": 42,
+            "image_position_y": 47,
+            "category_link": "shopify://collections/work-wear"
+          }
+        },
+        "category_D3xRFF": {
+          "type": "category",
+          "settings": {
+            "category_name": "JACKETS",
+            "image_position_x": 39,
+            "image_position_y": 8,
+            "category_link": "shopify://collections/outerwear"
+          }
+        },
+        "category_rrjaey": {
+          "type": "category",
+          "settings": {
+            "category_name": "CASUAL",
+            "image_position_x": 57,
+            "image_position_y": 55,
+            "category_link": "shopify://collections/casual-wear"
+          }
+        }
+      },
+      "block_order": [
+        "category_P7GCah",
+        "category_eYUJBT",
+        "category_D3xRFF",
+        "category_rrjaey"
+      ],
+      "settings": {}
+    },
+    "rich_text_hip9zB": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_xe3inG": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>The Latest from our Experts</strong>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_xe3inG"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "featured_single_blog_Y9ejn4": {
+      "type": "featured-single-blog",
+      "settings": {
+        "blog": "articles",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "550d49f4-7f1e-4914-af8c-ec59f7114d39": {
+      "type": "spacer",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "margin_top": 36,
+        "margin_bottom": 0,
+        "margin_x": 0,
+        "divider_color": "#f0f0f0"
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "SHOP BEST SELLERS",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "carhartt",
+        "products_to_show": 16,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "show_full_collection": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 32,
+        "padding_bottom": 36,
+        "show_filters": false,
+        "brand_filter_1": "ARIAT",
+        "brand_filter_2": "WRANGLER",
+        "brand_filter_3": "KIMES RANCH",
+        "brand_filter_4": "OUTBACK TRADING COMPANY",
+        "brand_filter_5": "MWG"
+      }
+    },
+    "0f3ffb0f-e8ea-4142-b006-188f1b3c6d92": {
+      "type": "spacer",
+      "disabled": true,
+      "settings": {
+        "margin_top": 0,
+        "margin_bottom": 36,
+        "margin_x": 0,
+        "divider_color": "#f0f0f0"
+      }
+    },
+    "93b21139-27a4-478c-96ed-f16c855a6ba4": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21465692832025__93b21139-27a4-478c-96ed-f16c855a6ba4-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "KIMES RANCH OLIVIA",
+            "heading_size": "h1"
+          }
+        },
+        "template--21465692832025__93b21139-27a4-478c-96ed-f16c855a6ba4-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover the perfect blend of style and comfort with Kimes Ranch Olivia Jeans – our best-seller for a reason!</p>",
+            "text_style": "body"
+          }
+        },
+        "template--21465692832025__93b21139-27a4-478c-96ed-f16c855a6ba4-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "https://weiswesternwear.com/products/kimes-ranch-women-s-olivia-jean",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--21465692832025__93b21139-27a4-478c-96ed-f16c855a6ba4-heading-1",
+        "template--21465692832025__93b21139-27a4-478c-96ed-f16c855a6ba4-text-1",
+        "template--21465692832025__93b21139-27a4-478c-96ed-f16c855a6ba4-button-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".image-with-text__media img {object-fit: contain;}",
+        ".image-with-text .button {background-color: #870c16;}",
+        ".image-with-text__texT {width: 750px;}"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "aab2bd51-0a60-443a-b4d9-89c8d7352b70": {
+      "type": "test",
+      "disabled": true,
+      "custom_css": [
+        ".brands-slider__carousel {padding: 0px 10px;}"
+      ],
+      "settings": {
+        "vendor_1": "CARHARTT",
+        "vendor_2": "ARIAT",
+        "vendor_3": "STS-RANCHWEAR",
+        "vendor_4": "WRANGLER",
+        "vendor_5": "LEVIS"
+      }
+    },
+    "50ae63a2-5321-4780-a534-dfd2a95d8730": {
+      "type": "spacer",
+      "disabled": true,
+      "settings": {
+        "margin_top": 36,
+        "margin_bottom": 0,
+        "margin_x": 0,
+        "divider_color": "#f0f0f0"
+      }
+    },
+    "b78c655d-23ab-46b9-bf19-580e37aa192d": {
+      "type": "test2",
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-size: 32px;}"
+      ],
+      "settings": {
+        "style_1_image_title": "WESTERN",
+        "style_1_title": "WESTERN",
+        "style_1_url": "collections/western-shirts",
+        "style_2_image_title": "WORK",
+        "style_2_title": "WORK",
+        "style_2_url": "collections/work-wear",
+        "style_3_image_title": "CASUAL",
+        "style_3_title": "CASUAL",
+        "style_3_url": "https://weiswesternwear.com/collections/casual-wear"
+      }
+    },
+    "cadfa1fb-7970-4bba-a5f5-bca38386b6d8": {
+      "type": "spacer",
+      "disabled": true,
+      "settings": {
+        "margin_top": 36,
+        "margin_bottom": 0,
+        "margin_x": 0,
+        "divider_color": "#f3f3f3"
+      }
+    },
+    "e169fd4b-312b-44b7-9b25-08306243ac4a": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "FEATURED WORK WEAR",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "work-wear",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "show_full_collection": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "show_filters": true,
+        "brand_filter_1": "ARIAT",
+        "brand_filter_2": "CARHARTT",
+        "brand_filter_3": "",
+        "brand_filter_4": "",
+        "brand_filter_5": ""
+      }
+    },
+    "reviews_thPF4Q": {
+      "type": "reviews",
+      "custom_css": [
+        ".reviews-slider__button {border-radius: 10px;}"
+      ],
+      "settings": {}
+    },
+    "39e57f68-f893-416b-a505-5f22ddc473ce": {
+      "type": "spacer",
+      "settings": {
+        "margin_top": 0,
+        "margin_bottom": 40,
+        "margin_x": 0,
+        "divider_color": "#f0f0f0"
+      }
+    },
+    "rich_text_67EFqW": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_8RmeCa": {
+          "type": "heading",
+          "settings": {
+            "heading": "CUSTOMER REVIEWS",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8RmeCa"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "673afbb3-8075-436b-b881-abcb5f4efb43": {
+      "type": "image-with-text",
+      "blocks": {
+        "a59bb7fe-327a-4643-81b4-4d5b864a2d54": {
+          "type": "heading",
+          "settings": {
+            "heading": "COWBOY BOOTS",
+            "heading_size": "h1"
+          }
+        },
+        "2b53875f-93a9-4d2a-9f88-6052518c51e5": {
+          "type": "text",
+          "settings": {
+            "text": "<p>From tested cowboys to first time rodeo-goers, we have the western gear for you.</p>",
+            "text_style": "body"
+          }
+        },
+        "d46cb050-4846-43b7-ad46-afe55bb30f63": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP WESTERN BOOTS",
+            "button_link": "shopify://collections/cowboy-boots",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "a59bb7fe-327a-4643-81b4-4d5b864a2d54",
+        "2b53875f-93a9-4d2a-9f88-6052518c51e5",
+        "d46cb050-4846-43b7-ad46-afe55bb30f63"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".image-with-text__media img {object-fit: contain;}",
+        ".image-with-text .button {background-color: #870c16;}"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "featured_by_style_8dpf6A": {
+      "type": "featured-by-style",
+      "settings": {
+        "title": "CLEARANCE",
+        "mens_casual": "mens-casual-clearance",
+        "mens_work": "mens-work-clearance",
+        "mens_western": "mens-western-clearance",
+        "womens_casual": "womens-casual-clearance",
+        "womens_work": "womens-work-clearance",
+        "womens_western": "womens-western-clearance"
+      }
+    },
+    "6b6a33ea-30fa-445b-aedf-64cdd1457c77": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--21465692832025__6b6a33ea-30fa-445b-aedf-64cdd1457c77-collapsible_row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "is_product_review_tab": false,
+            "heading": "IS WESTERN WEAR POPULAR",
+            "icon": "none",
+            "row_content": "<p>Western Wear is classic. It’s an identifiable look of clothing and footwear that says you are independent, you have strength, and you value your place in the heritage.<br/><br/>When you think about it, Western Wear has influenced clothing styles and culture across the world for more than 100 years. Now that's popular!<br/><br/>Here’s a small sample of Western Wear influence: the Western movies of Hollywood, since the 1920s. The bandanas and neckerchiefs worn by bikers, made famous by Hollywood’s movie The Wild One, starring Marlon Brando? Where did those kerchiefs and bandanas come from? What are the roots of motorcycle movie Easy Rider? Western Wear.<br/><br/>Where did 1970s rock stars borrow the idea to wear a long scarf? Where did the bandana worn by the lead singer for the Guns ‘N’ Roses rock band in the 1990s come from? Western Wear.<br/><br/>The “cowboy look” is known from Australia to Azerbaijan, and from Zurich to Zengzhou. It’s still very popular in the 21st Century. Wei’s Western wear fulfills customer wishes by sending parts of its legendary selection not only across Canada and the USA, but also to Asia Pacific and Europe.</p>",
+            "page": ""
+          }
+        },
+        "1a107f7f-7127-4bce-8ab1-f6670ed54c75": {
+          "type": "collapsible_row",
+          "settings": {
+            "is_product_review_tab": false,
+            "heading": "WHAT IS INCLUDED IN A WESTERN WEAR OUTFIT?",
+            "icon": "none",
+            "row_content": "<p>You can embrace Western fashion while claiming your own style and resisting stereotypes because there are so many styles, colours and graphics available at Wei’s Western Wear, it’s easy to be yourself.</p><p>A head-to-toe Western wear outfit will include a visually commanding Western hat that keeps the sun and the snow off your head. You don’t have to water your horse with your “bucket hat” to enjoy Western hat style. Wei’s has dozens of styles by brands such as Stetson, Resistol, Seratelli, Bailey, Akubra and Outback. Check out the <a href=\"https://weiswesternwear.com/pages/hats-faq?_pos=1&_sid=c89822b83&_ss=r\" target=\"_blank\" title=\"Wei's Hat Size Guide\">Wei’s Hat Size Guide on this website</a>.</p><p>A Cowboy Hat usually has small holes to help release any perspiration and promote air circulation. The hat brim is about 3 inches but could be wider, and the hat’s fit on your head is mid-profile but could be taller, such as the famous Ten Gallon Hat.</p><p>On your feet, a pair of cowboy boots that fit as cleanly and securely as a second skin. At the very beginning in 1956, Wei’s was Wei Mah, a talented boot repairman who catered to customers from across Alberta. We have 65 years of knowing about cowboy boots. What would you like to know?</p><p>To learn more, check out the <strong>cowboy boot illustration</strong> courtesy of our friends at Lucchese, one of the earliest American manufacturers of cowboy boots.</p><p>The rest of your Western wear outfit is your shirt, maybe a vest, your pants and a good belt, and yes, cowboys do wear socks and underwear and sometimes a little jewelry.</p>",
+            "page": ""
+          }
+        },
+        "template--21465692832025__6b6a33ea-30fa-445b-aedf-64cdd1457c77-collapsible_row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "is_product_review_tab": false,
+            "heading": "WHAT MAKES A GREAT SHIRT FOR WESTERN WEAR OUTFIT?",
+            "icon": "none",
+            "row_content": "<p>Want to know why one shirt costs $29 and another shirt costs $89 or more? The difference is likely in the design as well as the quality of the material. </p><p>The design elements of a Western shirt are influenced by practical considerations such as fit and comfort.  The quality of material needs no mention, you can feel the difference when you come in-store.  If you are shopping online, look for 100% cotton or blends from your favourite brands, including Wrangler, Ariat, Cinch, or more.</p>",
+            "page": ""
+          }
+        },
+        "template--21465692832025__6b6a33ea-30fa-445b-aedf-64cdd1457c77-collapsible_row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "is_product_review_tab": false,
+            "heading": "WHY DO WESTERN WEAR SHIRTS HAVE SNAPS?",
+            "icon": "none",
+            "row_content": "<p>Western shirt design features may include snaps instead of buttons – why? Because snaps come off in an instant, with one hand, and won’t get hung up on something at the wrong moment.</p><p>When you’re hanging onto a galloping horse, a split second can make a big difference.</p><p>Besides practicality, let’s face it, snaps are cool.</p><p>Most snaps can be pearly white or black. Some brands such as Scully are known for intricate designs on their snaps. Many of the Scully shirts carried by Wei’s are works of art.</p><p>A longer cuff with more snaps or buttons is more stylish and formal.</p><p>The more buttons or snaps on a cuff, the more fitted the cuff will be on your wrist and arm. You would not want to fasten and unfasten several buttons on each arm. Snaps would be much easier.</p><p>A regular cuff, especially with just one button, is more casual. The number of buttons or snaps also impacts the price.</p>",
+            "page": ""
+          }
+        },
+        "template--21465692832025__6b6a33ea-30fa-445b-aedf-64cdd1457c77-collapsible_row-4": {
+          "type": "collapsible_row",
+          "settings": {
+            "is_product_review_tab": false,
+            "heading": "CAN WESTERN WEAR BE WORN FOR WORK?",
+            "icon": "none",
+            "row_content": "<p>Whether you’re working on the farm, in the trades, in the field or in a shop, driving a truck, or working in a retail store like Wei’s, denim is the default. Of course if you’re working at home anything goes, so why not go for the easy comfort of Western wear? Keep it simple. </p><p>The core of Western wear is jeans. Denim provides warmth and protection, and styles have pockets for your necessities.the heavier fabric weights are pretty rugged. In fact, Wei’s has your denim needs covered for all 4 seasons with jeans from lightweight 9 oz all the way up to heavyweight 14.25oz, which are pretty rugged.</p><p>Most fabric weights have optional stretch fabric worn right in to provide ease of movement. Some fabric weaves including twill resist tearing and a ‘rip stop’ weave is made for rugged work. If you’re working in the field and insulation is on your mind, Wei’s has fleece denim styles from Carhartt and Wrangler to keep you toasty while you’re in the elements.   </p><p>Even at the office, ’blue jean Fridays” are common and jeans are given the ‘thumbs up’. There are very few workplaces where jeans are not welcome and did you know, most bosses even wear jeans! </p><p>So keep your Western pants handy, and get ‘em washed and dried. Don’t even think about ironing or dry-cleaning, because it’s just not needed. If you forgot your Western pants and shirt under a pile and they became more wrinkly than you’d like, let the clothes dryer be your friend. Just throw your clothes in, enjoy your coffee, come back and they’re done, and you’re ready. That’s part of the beauty of Western wear clothing. Keep it simple.</p><p>If you need to adhere to a ‘business casual’ rule, you can still bring Western style to your workplace. Wei’s has Western pants and shirts that meet the need for Western wear style. Our Wrangler Wranchers are a dressier poly pant that includes a crease, and come in several different colours. Wranchers look smart and they’re really comfortable, including a little stretch. Wei’s also carries Dickies lighter-weight pants that are great for warehouse or casual office work. Pair any of these with a Western belt and a great shirt, and you’re sticking to what’s true for you.</p><p>Have you been to Wei’s stores? When you come looking for a Western shirt, you might just be amazed are our rows and rows of Cinch, Ariat, Wrangler, Roper, Stetson, Panhandle Slim, Scully and more brands, in sizes from Small all the way to 5X in some styles.</p><p>These brands have held true to their Western heritage and also brought in some modern touches and new clothing technologies. Wei’s stocks shirts in vibrant colours, modern designs and comfort-fitting fabrics while being unmistakably Western. It’s not your Grandpa’s Western wear anymore, unless you want it that way - we do have original fit shirts, traditional designs, and 100% cotton fabrics.</p><p>When you’re choosing from hundreds of shirts, you’re going to find some you like in the size you need in our legendary selection. These shirt styles are often seasonal, meaning the manufacturers have limited runs and re-ordering may not be possible.</p><p>Shirt styles move quickly and Wei’s is constantly trying to get new stock on our website, so please check back to see what’s new. We want you to have the shirt you want to show your Western style at work.</p><p>Ariat and Wrangler are two brands that have gone the extra mile, making Western fashion part of their Flame-Resistant shirt line-up. If you need FR, you can still have Western wear style. You’ll find these styles on our website, ready to be shipped to wherever you need them, at the camp or at the office.</p>",
+            "page": ""
+          }
+        },
+        "849bf75a-6deb-4d90-aa00-c36a852c4f58": {
+          "type": "collapsible_row",
+          "settings": {
+            "is_product_review_tab": false,
+            "heading": "WHAT'S THE BEST OCCASION FOR WESTERN WEAR?",
+            "icon": "none",
+            "row_content": "<p>There are really only two occasions - also known as work and play - and Western Wear suits both occasions. </p><p>It’s not just cowboys who wear western wear. The vast majority of men and women own a pair of jeans (or two, or three) and a well-fitting long-sleeved shirt (or two, or three) that suits your personality. That’s the core of Western wear right there, almost from head to toe!</p><p>But it’s the accessories that make the difference, and identify you. What will take you to the cowboy groove is the boots and the hat. Yes - it’s really the footwear and headwear that make the difference! </p><p>First, the feet. Remember, cowboy boots have moved beyond having only pointed styles, since not everyone can wear them. Cowboy boots come in square toed and rounded toed styles. Some boots get closer to ‘biker’ styles and that’s why several bookmakers like Canada West, Boulet, even the venerable Lucchese, make boot styles that are solid, and might be plain except for some metal adornments, and emphasize a square toe. </p><p>At the other end of the spectrum, take a cowboy boot with a rounded toe and make it shorter, just above the ankle. Now you’ve got a ‘Romeo’ style, or the style of Blundstone boot that has been a trendsetter for decades. Yes, they have a few extras, such as a pull tab at the heel and some stretch fabric near to the ankle. These makers of short boots are pretty smart, making their boots easier to get on and get off. But at their core, you cold certainly argue it’s an offshoot of the family of cowboy boots. Bottom line, put on your jeans and shirt, then add your Blundstones or biker boots, and you’re pretty dang close to being a Westerner. </p><p>Now, the top part - the hat. Let’s face it, almost everyone has the need for a hat at some time of the year. The weather kind of demands that we go beyond homie and parka head coverings to something amore substantial and stylish. A hat - you need a hat. The question is do you want to wear something called a beanie, or do you want to wear a hat that fits your head, covers your head? A real hat deserves to be in the sentence ‘from head to toe’ - hey, that’s your hat and boots.</p><p>No doubt about it, a traditional Western hat is a working hat. It’s not just the fit, and it’s not just the style, it’s the purpose-made shape of the hat, and the key is the brim. The brim of the hat is what covers your face and neck from the rain and snow and sun. The workers in the fields all over the world have traditionally had wide-brimmed hats, because the hat is a treasure of any person who works with their hands. Too busy working hard to wipe off the sweat or rain? No problem, your hat keeps you dry. Riding in he mountains, looking for gold, and your horse is getting thirsty? It’s also known as a bucket hat. Don’t get squeamish on us. </p><p>Sure, the essential Cowboy hat style has been improved by adding a few well-placed holes to let some air circulate up there. And the brim could taper down, or curl up. It could be a 2.5 inch brim, or even a 3.5 inch brim. These are the functional questions anyone will ask (or might just think about).</p><p>Then, onto style. The hat can be pounced (shaped) in many ways to suit the personality of the hat wearer. A simple rounded top might suit some, but most hat wearers want a beveled top with one or two peaks, like a Stetson or a Serratelli. Want more of an adventurer look, or are you even a private eye kind of guy? Wei’s has you covered. Wei’s carries 10 different brands of Western hats, and any of them are good enough for a Cowboy. </p><p>This is why Western-style hats are inherently superior to ball caps. There - we said it. Sure, we like ball caps but Western Cowboy hats are much better-looking, and yep, they are more functional. Got a wet neck? You’ve probably been out in the rain wearing a ball cap.</p><p>On a Saturday night when there’s a community dance, it’s time for cowboys to shower a lot and dress up a little. Clean and shine the boots with mink oil. Put on fresh socks that are tall enough so cowboy boots will not chafe your calves. Wei's has Schaefer boots socks and other brands that are made for the purpose. Some cowboys tuck their pants inside their boots, like a traditional soldier’s attire.</p><p>Clean jeans, a good-looking belt and a big buckle. A western shirt. Sometimes a cravat, now often called a wild rag, which absorbs sweat at the neck and accentuates your head. Ready for any occasion.</p>",
+            "page": ""
+          }
+        },
+        "c4c2e998-43c7-4dbb-89dc-a22b9156045f": {
+          "type": "collapsible_row",
+          "settings": {
+            "is_product_review_tab": false,
+            "heading": "WHY WEI'S WESTERN WEAR?",
+            "icon": "none",
+            "row_content": "<p>Wei’s ships Western wear clothing, boots, hats and more to every province, and across the USA. Customers are attracted by our great selection and reasonable prices.</p><p>At our stores, every day customers come in to browse through our western wear, work wear and casual wear. Many of these customers are passing through Red Deer, or they’ve made a special trip from Calgary or Edmonton to come to Wei’s. Some come from BC or Saskatchewan. We appreciate the time and effort they’ve invested to come and see our selection.</p><p>They tell us we have the best selection of cowboy boots, cowboy hats, and cowboy shirts. When we ask about their local stores, they laugh and point to what we have, and they say there’s no comparison. </p><p>They also come to Wei’s for the second-to-none selection of work boots, with more than 20 brands available. They come to find the right style and size of Western jeans - we have more than 100 Wrangler styles in stock! We also carry Cinch, Silver, Ariat, Rock&Roll, and other key brands.</p><p>We’re still working at getting all these items online, but you can always phone one of our stores to discuss the style and size you want. Check back to see the new items we’ve added, and the new arrivals we’re bringing in for you.</p>",
+            "page": ""
+          }
+        },
+        "738dd322-b12d-4c4e-9e05-7512c8b6e492": {
+          "type": "collapsible_row",
+          "settings": {
+            "is_product_review_tab": false,
+            "heading": "WHAT'S THE MOST POPULAR BRAND OF WESTERN WEAR FOR MEN?",
+            "icon": "none",
+            "row_content": "<p>Wrangler is probably the biggest Western brand. But guess what, you could also say it’s the coolest. The chart-topping 2019 Country Music Award song Old Town Road, recorded by Lil Nas X with Billy Ray Cyrus, was followed with a clothing collection by Lil Nas X with… Wrangler. It’s fair to say anyone can call their favourite brand is coolest… but this music star chose Wrangler.</p><p>If you released one of the biggest country songs in the past 10 years, you can call yourself cool. </p><p>The Lil Nas X collection sold out quickly at Wrangler. While we don’t have a crystal ball, we’d say more collections will be coming. </p><p>We can’t mention the new without the original. About 20 years ago, country music superstar George Strait launched his Wrangler clothing collection.</p><p>George Strait styles are still one of Wrangler’s (and Wei’s) best-sellers.</p>",
+            "page": ""
+          }
+        },
+        "e039f618-822c-4e8c-ac70-aa05d297d996": {
+          "type": "collapsible_row",
+          "settings": {
+            "is_product_review_tab": false,
+            "heading": "IS WESTERN WEAR CLOTHING IN STYLE?",
+            "icon": "none",
+            "row_content": "<p>Western Wear is timeless, in a style anyone can wear.  It’s always in style in North America, and is being discovered in Europe and Asia.</p><p>Why is that? Well, we think Western wear is Practical, Efficient and Direct.</p><p>Given its history as the original workwear, Western Wear clothing is more practical than other clothing styles. Your pants have 5 pockets, not 4 or 2, and the denim is more rugged and rip-resistant than non-Western styles. Your shirt pockets can snap shut to help keep important things inside those pockets. Cuffs are adjustable for warmth and fit. Of course your pants have belt loops. </p><p>Western wear is more efficient. Time to go somewhere? Slip on the boots, no laces here. Do up your shirt with a snap, snap, snap. Tuck in the shirt? Optional, of course. Bring a hat, no matter what weather, and you’ll be prepared for anything. Done.</p><p>When you think of the pointed yokes on the front or back of a shirt or jacket, or the squared-off corners on the corners of a pocket flap, they’re a little more pointed, a little more direct. What you see is what you get.</p><p>What about colours and designs? Pants are always plain. Blue or black are enough choices - okay, maybe tan for a hot Summer day. If it’s not machine washable, forget it. </p><p>But what goes on top of those plain pants has some life to it. Shirts have colour, and Wei’s has a great selection of Cinch, Artist, Wrangler, Roper and Panhandle western shirts, plus other brands. </p><p>When you want to blend in, blend in. Choose a small-checked plaid or design, or even paisley, to provide some colour. When you want to stand out, stand out. Western shirts have some of the wildest designs in fashion. Its Mexican heritage stands out with bold red, white, brown and black colours. Its Indigenous influences add variety with turquoise, yellow, orange and subdued greys, blues and off-whites. </p><p>Wei’s Western Wear has the styles and designs to suit you, whether you’re dressing for work or play, for any occasion. </p>",
+            "page": ""
+          }
+        },
+        "5ee1d5e9-57ab-4c94-ad7e-a0603bcf15d1": {
+          "type": "collapsible_row",
+          "settings": {
+            "is_product_review_tab": false,
+            "heading": "IS WESTERN WEAR POPULAR INTERNATIONALLY",
+            "icon": "none",
+            "row_content": "<p>Yes. In Europe, Italian fashion houses have grabbed onto Western styles, “There’s something about a denim Western shirt or trucker jacket that’s just effortlessly cool right now,” says Italian designer Gauthier Borsarello in high lifestyle magazine <em>Robb Report</em>. </p><p>Has Wei’s shipped orders to Europe? The answer is yes, and we have lots of denim shirts and trucker jackets in stock for you. When you wear them you’ll know you are setting the trends for  Europeans. </p><p>Over in Tokyo, a menswear fashion house has a collection of “sawtooth” denim shirts with two front pockets with snaps, and snaps on the cuffs. Definitely Western wear. </p>",
+            "page": ""
+          }
+        },
+        "8e0ff685-88dc-4a38-9d2f-8107406ee0a6": {
+          "type": "collapsible_row",
+          "settings": {
+            "is_product_review_tab": false,
+            "heading": "WHAT ARE SOME POPULAR BRANDS OF WESTERN WEAR FOR MEN?",
+            "icon": "none",
+            "row_content": "<p>A list of boot brands or hat brands would be different, but for Western Wear clothing, the most popular brands at Wei’s include Wrangler, Ariat, Cinch, Roper, Levi’s, and Panhandle. Kimes Ranch and Dale Brisby clothing styles are becoming more popular too. And brands like Silver and Rock&Roll are favourites of our customers, even though they may not be officially Western Wear.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_bRbc9M": {
+          "type": "collapsible_row",
+          "settings": {
+            "is_product_review_tab": false,
+            "heading": "WHAT ARE SOME OF THE SIMILARITIES BETWEEN MEN'S AND WOMEN'S WESTERN CLOTHING",
+            "icon": "none",
+            "row_content": "<p>Welcome to Wei's Western Wear, your one-stop destination for all things Western fashion! Let us delve into the captivating world of men's and women's western attire, highlighting similarities and differences. Whether you're a seasoned cowboy or just someone looking to embrace the timeless charm of Western style, this article is your ultimate source of inspiration.</p><p>Let's kick things off with a staple of western fashion: cowboy boots. For men, cowboy boots are a symbol of weathered elegance. Crafted from durable leather, these boots are designed for both style and functionality. The pointed toes and distinctive stitching patterns make them instantly recognizable. Pair them with jeans or dress them up for a formal occasion. Cowboy boots are incredibly versatile!</p><p>Denim is at the center of Western fashion, and men's wear is no exception. Men’s  jeans typically feature a straight leg or bootcut design, making it easy to wear them over boots. The denim material can withstand the toughest outdoor activities and also look great at a casual gathering.</p><p>Western shirts are characterized by their classic design elements. Snap buttons, pointed collars, and yokes are all common features. These shirts come in plaid, checkered, or solid colors. Whether you're on the ranch or out for a night on the town, a well-fitting shirt is a timeless choice.</p><p>Finally, men's Western wear wouldn't be complete without some essential accessories. Hats, belt buckles, and bolo ties are iconic pieces that add a touch of authenticity to any outfit. These accessories are both practical and stylish, making them an integral part of your wardrobe</p><p>Now that we’ve reviewed some typical choices for men, let’s explore the possibilities for women. </p><p>For women, boots are a beloved fashion choice. They are very similar to men's cowboy boots, but they often feature more decorative details, like embroidery, rhinestones, and vibrant colors. Women's boots are designed to embrace both tradition and elegance, making them a perfect choice for a variety of occasions.</p><p>One of the key differences of women's Western wear is that it includes skirts and dresses. These come in various lengths, from knee-length to ankle-length. They often feature playful patterns, floral prints, and fringed details, adding a feminine touch to your outfit.</p><p>Women's tops and blouses put a feminine twist to the traditional cowboy shirts.They are available  in a range of materials, including denim, cotton, and silk. Lace trims, ruffles, and tailored fits are all common elements.</p><p>To complete the look, women can choose Western-inspired jewelry and accessories. Silver and turquoise jewelry, concho belts, and stylish scarves are popular choices. These accessories not only add a touch of glamor, but they also allow you to express your personal style.</p><p>While there are notable differences between men's and women's Western clothing, they also share some common elements.</p><p>Cowboy hats are a common choice for both men and women. These hats provide protection from the sun, and serve as a symbol of Western identity.</p><p>In addition, denim is a popular material in Western clothing. Both men and women appreciate the durability and versatility of denim jeans, jackets, and shirts.</p><p>Stylish belts with intricate buckle designs are popular for both genders. They add a touch of allure to any outfit!</p><p>Leather is another cornerstone of Western fashion. Whether it's cowboy boots, belts, or jackets, everyone appreciates the durability and timeless appeal of leather.</p><p>In the world of Western fashion, men and women have a wide range of clothing options to choose from. While men's choices exude rugged charm and durability, women's options embrace tradition while adding a touch of elegance and femininity. Whether you're drawn to the timeless appeal of cowboy boots, the versatility of denim, or the allure of leather accessories, there's something for everyone!Saddle up and  express your unique style with Wei's Western Wear!</p><p>Explore our vast collection of men's and women's Western wear and discover the perfect outfit to elevate your fashion game. We're here to help you embrace the spirit of the Wild West with style and authenticity.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_QwpAzR": {
+          "type": "collapsible_row",
+          "settings": {
+            "is_product_review_tab": false,
+            "heading": "WHAT ARE SOME OF THE ESSENTIAL ARTICLES OF WESTERN CLOTHING?",
+            "icon": "none",
+            "row_content": "<p>Whether you're a seasoned cowboy or just someone looking to embrace the timeless charm of Western style, we've got you covered. Let us explore the essential pieces of Western clothing that you need  in your wardrobe. From boots to stylish hats, we'll highlight key items that define Western fashion.</p><p>Let's start with the cornerstone of Western wear: cowboy boots. These iconic pieces are stylish and incredibly practical. Crafted from high-quality leather, cowboy boots are designed to withstand the toughest of conditions while making a bold fashion statement. The pointed toes and distinctive stitching patterns are visually attractive, and they come in various styles, including traditional, exotic leather, and modern interpretations.</p><p>As you probably know, denim is the centerpiece of Western fashion. A well-fitting pair of denim jeans is an absolute must-have for anyone looking to embrace the Western style. Known for their durability and comfort, these jeans often feature a straight leg or bootcut design, making them easy to wear over cowboy boots. Available in classic blue and a variety of washes, denim jeans offer versatility and style.</p><p>Shirts are another essential part of Western fashion. These shirts are characterized by snap buttons, pointed collars, and yokes. They come in various materials, including denim, cotton, and flannel, offering both comfort and style. Whether you're on the ranch or hitting the town, a well-fitting Western shirt is a smart choice.</p><p>No Western look is complete without a classic cowboy hat. These iconic pieces not only provide protection from the elements, but they also add a touch of authenticity to your outfit. Cowboy hats come in a range of styles, from the traditional wide-brimmed hat to modern variations, like the cattleman and the gambler.</p><p>To truly embrace the Western aesthetic, consider adding some accessories to your outfit: </p><ul><li>Belts: Stylish belts with intricate buckle designs add the finishing touch to your outfit. They are stunning and work well.</li><li>Bolo Ties: Bolo ties are unique and eye-catching. They feature a decorative clasp and cords that hang down, adding a touch of flair to your clothes.</li><li>Bandanas and Scarves: These versatile accessories can be worn as neckties, headbands, or even as a stylish addition to your Western shirt. They come in various colors and patterns.</li><li>Leather Gloves: For a touch of practicality and style, consider leather gloves with Western detailing. They are perfect for outdoor activities and add a hardy edge to your look.</li></ul><p>Depending on the climate and occasion, outerwear can be essential. Consider adding these items to your wardrobe:</p><ul><li>Jackets: Whether it's classic denim, leather , or fringed suede, Western-inspired outerwear adds a layer of style and warmth to your look.</li><li>Vests: Vests are a versatile addition to your wardrobe. They can be worn over shirts or by themselves.</li><li>Ponchos and Serapes: These traditional garments provide warmth and a touch of Southwestern charm. They are perfect for cooler evenings and outdoor events.</li></ul><p>For women, the essential pieces include all of the items above, as well as: </p><ul><li>Cowgirl Boots: Similar to cowboy boots but often featuring more decorative details like embroidery, rhinestones, and vibrant colors.</li><li>Skirts and Dresses: Western-style skirts and dresses in various lengths, patterns, and fringed details that adda feminine touch.</li><li>Blouses and Tops: Tops and blouses that are inspired by traditional cowboy shirts but include feminine elements like lace trims, ruffles, and tailored fits.</li><li>Jewelry and Accessories:   Western-inspired jewelry like silver and turquoise pieces, concho belts, and stylish scarves </li></ul><p>These essential pieces form the foundation of a style that is both timeless and distinctive. Whether you're looking to embrace the rugged charm of cowboy boots, the versatility of denim, or the iconic appeal of cowboy hats, Wei's Western Wear has everything you need. Explore our vast collection and elevate your fashion game today. Embrace the spirit of the Wild West with style and personality.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_EQLgj7": {
+          "type": "collapsible_row",
+          "settings": {
+            "is_product_review_tab": false,
+            "heading": "CAN I WEAR WESTERN CLOTHING EVERY DAY, OR IS IT MAINLY FOR SPECIAL OCCASIONS?",
+            "icon": "none",
+            "row_content": "<p>At Wei's Western Wear, we believe that Western fashion isn't just reserved for special occasions. Western wear is a versatile and timeless style that can be effortlessly incorporated into your daily outfits. Let us  explore how to include Western wear in your wardrobe , debunking the myth that it's exclusively for specific occasions. From cowboy boots to denim jeans, we'll show you how to infuse the spirit of the Wild West into your daily life.</p><p>One of the key pieces of Western wear that you can easily adopt are the iconic cowboy boots. While traditionally associated with ranch work and rodeos, cowboy boots have evolved to become a stylish choice for everyday wear.</p><ul><li>Casual Chic: Pair your cowboy boots with a simple t-shirt and jeans for a casual yet fashionable look. The charm of the boots adds character to your outfit, perfect  for everything from errands to coffee dates.</li><li>Workwear: Depending on your workplace rules, boots can be a unique addition to your attire. Pair them with slacks or a skirt, and you'll stand out with a touch of Western flair.</li><li>Night Out: For a night on the town, up your game by wearing cowboy boots with a sleek dress or skirt. The contrast between your dress and boots will create a striking fashion statement.</li></ul><p>Jeans are a timeless staple that complement the Western aesthetic. They are comfortable, durable, and can be dressed up or down, making them perfect for everyday wear.</p><p>A well-fitting pair of denim jeans offers both style and comfort. Combine them with a Western shirt or a simple t-shirt for an informal yet stylish look.</p><p>In addition, many workplaces have begun to allow denim in the office. Choose a dark-wash, straight leg pair of Western-style jeans and pair them with a blazer and heels for a sophisticated look.</p><p>Western jeans are the ideal choice for a weekend getaway or a day of outdoor activities. Their durability and timeless style make them a practical choice for any adventure.</p><p>Western shirts are more than just a piece of clothing. They embody the spirit of the West while offering a stylish option for all your needs</p><p>For example, a classic Western shirt with snap buttons, pointed collars, and yokes is a fantastic addition to your wardrobe. Pair it with jeans, shorts, or skirts for a comfortable and classy outfit.</p><p>If your workplace has a relaxed dress code, you can incorporate a Western shirt into your office attire. Tuck it into slacks or a pencil skirt, and you'll strike the perfect balance between professional and stylish.</p><p>Western shirts are designed to be practical. You can wear one while hiking, camping, or enjoying outdoor activities. The breathable fabric and durable design make them an excellent choice.</p><p>Cowboy hats are often considered the ultimate symbol of Western style. While they may not be an everyday accessory for everyone, they can still add a unique flair to your look.</p><p>Don a cowboy hat when you're in the mood for a laid-back, casual look. Pair it with jeans and a t-shirt for a tasteful outfit.</p><p>Music festivals, outdoor events, and beach days are great opportunities to incorporate a cowboy hat into your outfit. After all, it provides protection against the sun and adds a touch of charm to your attire.</p><p>For those who love making a statement, wearing a cowboy hat on special occasions can be a bold choice. Whether it's a birthday celebration or a night out, a well-chosen hat can be the focal point of your outfit.</p><p>To complete your Western look, consider adding some key accessories:</p><ul><li>Belts: Stylish belts with intricate buckle designs can greatly improve your outfit. </li><li>Bolo Ties: Bolo ties are unique accessories that add a touch of charm to any outfit. Wear one with collared shirts or by itself to stand out.</li><li>Bandanas and Scarves: These versatile accessories can be worn as neckties or headbands. They come in a variety of colors and patterns to suit your style.</li></ul><p>Western wear shouldn’t be limited to special occasions or themed events. In the right pieces and with a dash of creativity, you can easily incorporate Western fashion into your wardrobe. Boots, denim jeans, Western shirts, cowboy hats, and accessories will allow you to infuse the spirit of the Wild West into your daily style. At Wei's Western Wear, we offer a wide range of authentic pieces to help you elevate your fashion with originality and flair.Embrace the Western style in your daily life!</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_NAHWqd": {
+          "type": "collapsible_row",
+          "settings": {
+            "is_product_review_tab": false,
+            "heading": "ARE WESTERN WEAR AND COWBOY CLOTHING THE SAME THING?",
+            "icon": "none",
+            "row_content": "<p>The terms \"Western wear\" and \"cowboy clothing\" are often used interchangeably. However, there are differences between the two. In this guide, we will contrast these two styles. Whether you're a cowboy or just someone interested in Western fashion, this article will help you better understand each style.</p><p>Western wear includes a broad range of clothing and accessories inspired by the American West. Cowboy boots are undoubtedly a prominent part of this.  These boots, characterized by their pointed toes, distinctive stitching, and high-quality leather construction, are designed for both style and practicality.</p><p>Western boots are adaptable and can be worn by anyone. They are suitable for everyday use and can be paired with jeans, skirts, or dresses for a fashionable look.</p><p>Denim jeans, another iconic piece of Western wear, are known for their durability and comfort. These jeans typically feature a straight leg or bootcut design, making them easy to wear with cowboy boots. You can wear these jeans for both work and leisure.</p><p>Western-style jeans are a fashion staple and are not limited to cowboy attire. They come in a variety of washes and styles, which is why they’re a popular choice for both men and women.</p><p>Moreover, Western shirts are known for their unique design elements, such as snap buttons, pointed collars, and yokes. While they are a classic component of Western wear, they are also a popular choice for those looking to add a touch of flair to their wardrobe.</p><p>Western shirts can be worn as part of your everyday outfit. They come in a variety of materials, patterns, and colors, making them suitable for a range of preferences.</p><p>Furthermore, cowboy hats are strongly associated with Western fashion, but they are not limited to cowboy clothing. These hats come in various styles, including the traditional wide-brimmed cowboy hat, cattleman, and gambler hats. They provide protection against the protection and add a touch of flair to your outfit.</p><p>Western wear includes a variety of accessories that complement the aesthetic. These accessories, such as belts, bolo ties, bandanas, and leather gloves, are designed to add a touch of originality and style to your look. They are versatile and can be effortlessly incorporated into your wardrobe</p><p>Accessories allow for personal expression. Whether you're wearing them for a special occasion or as part of your daily attire, they can reflect your unique style.</p><p>Cowboy clothing, on the other hand, refers to the attire traditionally worn by cowboys working on ranches. While this style shares some similarities with Western wear, cowboy clothing is primarily rooted in practicality and function.</p><p>This attire is designed for the rigors of ranch life. It includes items like rugged boots, durable jeans, and functional shirts that can withstand the demands of outdoor labor.</p><p>Cowboy clothing tends to be more utilitarian and straightforward in design than Western wear.</p><p>Cowboy clothing is all about getting the job done. It prioritizes functionality over fashion, ensuring that cowboys can perform their tasks efficiently.</p><p>In summary, while Western wear and cowboy clothing share some elements, they serve different purposes and cater to distinct preferences. Western wear is a diverse style  that includes cowboy boots, denim jeans, shirts, cowboy hats, and various accessories. These items can be seamlessly integrated into your wardrobe.</p><p>On the other hand, cowboy clothing is rooted in tradition and functionality, designed specifically for the needs of ranchers and cowhands. It emphasizes practicality and durability, making it ideal for rugged outdoor work.</p><p>At Wei's Western Wear, we celebrate the rich heritage of Western fashion by offering a wide range of authentic Western wear and cowboy clothing. Whether you're looking to embrace this  aesthetic in your everyday fashion choices or you’re seeking practical clothes for ranch work, we have you covered. Explore our collection today and discover the perfect pieces to express your unique style!</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21465692832025__6b6a33ea-30fa-445b-aedf-64cdd1457c77-collapsible_row-1",
+        "1a107f7f-7127-4bce-8ab1-f6670ed54c75",
+        "template--21465692832025__6b6a33ea-30fa-445b-aedf-64cdd1457c77-collapsible_row-2",
+        "template--21465692832025__6b6a33ea-30fa-445b-aedf-64cdd1457c77-collapsible_row-3",
+        "template--21465692832025__6b6a33ea-30fa-445b-aedf-64cdd1457c77-collapsible_row-4",
+        "849bf75a-6deb-4d90-aa00-c36a852c4f58",
+        "c4c2e998-43c7-4dbb-89dc-a22b9156045f",
+        "738dd322-b12d-4c4e-9e05-7512c8b6e492",
+        "e039f618-822c-4e8c-ac70-aa05d297d996",
+        "5ee1d5e9-57ab-4c94-ad7e-a0603bcf15d1",
+        "8e0ff685-88dc-4a38-9d2f-8107406ee0a6",
+        "collapsible_row_bRbc9M",
+        "collapsible_row_QwpAzR",
+        "collapsible_row_EQLgj7",
+        "collapsible_row_NAHWqd"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "FAQ'S",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "section",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "0e7c4410-d999-48db-be30-42d8f2b4e054": {
+      "type": "testimonial",
+      "settings": {
+        "quote1": "LOTS OF OPTIONS FOR COWBOY ATTIRE!",
+        "quote2": "GREAT SELECTION, GREAT PRICE, FAST SHIPPING",
+        "quote3": "AMAZING PEOPLE AND SO HELPFUL!",
+        "quote4": "THE BEST FOR CLOTHING IN CENTRAL ALBERTA"
+      }
+    },
+    "1701191543aff2260c": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "hero_banner_AJ7peC",
+    "hero_banner_hdTJRi",
+    "image_banner",
+    "brands_selection_9eqYwt",
+    "featured_by_style_xp6THd",
+    "category_selection_kdLdKW",
+    "rich_text_hip9zB",
+    "featured_single_blog_Y9ejn4",
+    "550d49f4-7f1e-4914-af8c-ec59f7114d39",
+    "featured_collection",
+    "0f3ffb0f-e8ea-4142-b006-188f1b3c6d92",
+    "93b21139-27a4-478c-96ed-f16c855a6ba4",
+    "aab2bd51-0a60-443a-b4d9-89c8d7352b70",
+    "50ae63a2-5321-4780-a534-dfd2a95d8730",
+    "b78c655d-23ab-46b9-bf19-580e37aa192d",
+    "cadfa1fb-7970-4bba-a5f5-bca38386b6d8",
+    "e169fd4b-312b-44b7-9b25-08306243ac4a",
+    "reviews_thPF4Q",
+    "39e57f68-f893-416b-a505-5f22ddc473ce",
+    "rich_text_67EFqW",
+    "673afbb3-8075-436b-b881-abcb5f4efb43",
+    "featured_by_style_8dpf6A",
+    "6b6a33ea-30fa-445b-aedf-64cdd1457c77",
+    "0e7c4410-d999-48db-be30-42d8f2b4e054",
+    "1701191543aff2260c"
+  ]
+}
