@@ -37,7 +37,7 @@
         "button_bg_color": "#000000",
         "button_text_color": "#000000",
         "button_hover_bg_color": "#333333",
-        "button_hover_text_color": "#FFFFFF"
+        "button_hover_text_color": "#ffffff"
       }
     },
     "hero_banner_hdTJRi": {
@@ -68,7 +68,7 @@
         "button_bg_color": "#000000",
         "button_text_color": "#000000",
         "button_hover_bg_color": "#333333",
-        "button_hover_text_color": "#FFFFFF"
+        "button_hover_text_color": "#ffffff"
       }
     },
     "image_banner": {
@@ -90,7 +90,7 @@
         "button"
       ],
       "settings": {
-        "banner_title": "Winter Jacket Blowout Sale",
+        "banner_title": "Winter Jacket Blowout",
         "banner_subtitle": "Shop our sale jackets that combine functionality and classic style from top brands like Kimes Ranch, Outback Trading, Cinch and more!",
         "image_overlay_opacity": 30,
         "image_height": "large",
