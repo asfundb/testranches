@@ -1,0 +1,135 @@
+<section class="category-grid">
+  <div class="category-grid__container">
+    {% for block in section.blocks %}
+      <a href="{{ block.settings.category_link }}" class="category-grid__item-link">
+        <div class="category-grid__item">
+          <h3 class="category-grid__title">{{ block.settings.category_name }}</h3>
+          {% if block.settings.category_image != blank %}
+            <div class="category-grid__image-wrapper">
+              <div class="category-grid__image" style="background-image: url('{{ block.settings.category_image | img_url: '800x800' }}'); background-position: {{ block.settings.image_position_x }}px {{ block.settings.image_position_y }}px; background-size: cover;"></div>
+            </div>
+          {% endif %}
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+<style>
+  .category-grid {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .category-grid div:empty {
+    display: block;
+  }
+  .category-grid__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  .category-grid__item-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  .category-grid__item {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 1 / 1;
+  }
+  .category-grid__title {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    z-index: 2;
+  }
+  .category-grid__image-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .category-grid__image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Category Grid",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Category",
+      "settings": [
+        {
+          "type": "text",
+          "id": "category_name",
+          "label": "Category Name",
+          "default": "Category"
+        },
+        {
+          "type": "image_picker",
+          "id": "category_image",
+          "label": "Category Image"
+        },
+        {
+          "type": "range",
+          "id": "image_position_x",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "label": "Image Horizontal Position",
+          "default": 50
+        },
+        {
+          "type": "range",
+          "id": "image_position_y",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "label": "Image Vertical Position",
+          "default": 50
+        },
+        {
+          "type": "url",
+          "id": "category_link",
+          "label": "Category Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Category Grid",
+      "blocks": [
+        {
+          "type": "category"
+        },
+        {
+          "type": "category"
+        },
+        {
+          "type": "category"
+        },
+        {
+          "type": "category"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

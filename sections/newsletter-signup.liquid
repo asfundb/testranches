@@ -1,0 +1,78 @@
+{% javascript %}
+  document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+    // Target the div with class klaviyo-form-SJsN6p
+    var klaviyoForm = document.querySelector('.klaviyo-form-SJsN6p');
+
+    // Check if the klaviyo form has any child elements
+    if (klaviyoForm && klaviyoForm.children.length === 0) {
+      // Create a container <div> for the message and the image
+      var container = document.createElement('div');
+
+      // Set the style for the container
+      container.style.textAlign = 'center';
+      container.style.paddingTop = '150px';
+      container.style.display = 'flex';
+      container.style.alignItems = 'center';
+      container.style.justifyContent = 'center';
+
+      // Create and append the text node to the container
+      var message = document.createElement('span');
+      message.textContent = 'You have already signed up ';
+      container.appendChild(message);
+
+      // Create and append the <img> element to the container
+      var image = document.createElement('img');
+      image.src = 'https://cdn-icons-png.flaticon.com/128/5610/5610944.png';
+      image.alt = 'Signed up';
+      // Optional: Set image size if needed
+      image.style.width = '24px';
+      image.style.height = '24px';
+      image.style.marginLeft = '5px';
+      container.appendChild(image);
+
+      // Append the container to the klaviyo form
+      klaviyoForm.appendChild(container);
+    }
+  }, 3000);
+});
+{% endjavascript %}
+
+
+<div class="newsletter-signup">
+  <div class="newsletter-signup__heading">WANT 10% OFF? SIGN UP FOR UPDATES FROM WEI'S</div>
+
+  <div class="newsletter-signup__body">
+  <div class="newsletter-signup__main-text">
+    Never miss a sale, new releases, or updates when you subscribe to our newsletter. Plus, receive 10% off your next order when you sign up for emails from Wei's. </div>
+<div class="newsletter-signup__form">
+<div class="klaviyo-form-SJsN6p"></div>
+</div>
+  </div>
+  
+  <div class="newsletter-signup__imagesBody">
+    
+  <div class="newsletter-signup__images">
+    <img class="newsletter-signup__image" src="https://cdn.shopify.com/s/files/1/0262/2636/0383/files/Newsletter-2.png?v=1710809348"/ >
+    <img class="newsletter-signup__image" src="https://cdn.shopify.com/s/files/1/0262/2636/0383/files/Newsletter-1.png?v=1710809348"/ >
+    <img class="newsletter-signup__image" src="https://cdn.shopify.com/s/files/1/0262/2636/0383/files/Newsletter-3.png?v=1710809348"/ >
+    <img class="newsletter-signup__image" src="https://cdn.shopify.com/s/files/1/0262/2636/0383/files/Newsletter-4.png?v=1710809348"/ >
+
+  </div>
+  <div class="newsletter-signup__fineprint">*10% off coupon codes are one-time use only. Code will open in dialog box with email entry. If you do not receive your 10% off code, please contact support@weiswesternwear.com</div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Newsletter-signup",
+    "settings": [],
+    "presets": [
+    {
+      "name": "Newsletter-signup",
+      "category": "Custom"
+    }
+  ]
+  }
+{% endschema %}

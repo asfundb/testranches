@@ -1,0 +1,44 @@
+{{ 'section-reviews-slider.css' | asset_url | stylesheet_tag }}
+
+<script src="{{ 'reviews-slider.js' | asset_url }}" defer></script>
+
+<div class="reviews-slider">
+  <div class="reviews-slider__header">
+    <div class="reviews-slider__title">
+       World Class Shopping Experience
+    </div>
+    <div class="reviews-slider__subheader">
+     Wei's is the only destination you need for <span class="desktopbtn">  Work, Western, and Casual </span>
+    </div>
+    <span class="mobilebtn" style="color:white; margin-top: -5px; font-size: 1.8rem;"> Work, Western, and Casual </span>
+  </div>
+  {% render 'reviews-track' %} 
+ 
+
+  <div class="reviews-slider__info">
+    <div class="reviews-slider__info-each">
+      <span class="reviews-slider__info-bold google-logo">4.7<img style="margin-left:4px;" src="{{ 'star-white.svg' | asset_url }}" /><img style="margin-left:4px;" src="{{ 'google-white.svg' | asset_url }}" /></span>
+      <span class="reviews-slider__info-small">stars out of 5</span>
+    </div>
+    <div class="reviews-slider__info-each">
+      <span class="reviews-slider__info-bold">3 min.</span>
+      <span class="reviews-slider__info-small">response time</span>
+    </div>
+    <a href="/pages/reviews" class="reviews-slider__info-each desktopbtn"><button class="reviews-slider__button button desktopbtn">SEE ALL REVIEWS</button></a>
+  </div>
+  <a href="/pages/reviews" class="reviews-slider__info-each mobilebtn"><button class="reviews-slider__button button mobilebtn">SEE ALL REVIEWS</button></a>
+
+</div>
+
+{% schema %}
+{
+  "name": "Reviews Section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Reviews Section",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

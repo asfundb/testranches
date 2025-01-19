@@ -1,0 +1,151 @@
+{{ 'section-test2.css' | asset_url | stylesheet_tag }}
+
+<div class="style-slider">
+  <div class="style-slider__title">SHOP BY STYLE</div>
+  <div class="style-slider__carousel">
+    <div class="style">
+      <div class="style-img-container">
+        <img
+          class="style-img style-img-1"
+          src="{{ section.settings.style_1_image | img_url: '300x' }}"
+          alt="{{ section.settings.style_1_title }}"
+        >
+        <div class="style-img-title">{{ section.settings.style_1_image_title }}</div>
+      </div>
+      <a href="{{ section.settings.style_1_url }}" class="style-title style-title-1">
+        {{- section.settings.style_1_title -}}
+      </a>
+    </div>
+    <div class="style">
+      <div class="style-img-container">
+        <img
+          class="style-img style-img-2"
+          src="{{ section.settings.style_2_image | img_url: '300x' }}"
+          alt="{{ section.settings.style_2_title }}"
+        >
+        <div class="style-img-title">{{ section.settings.style_2_image_title }}</div>
+      </div>
+      <a href="{{ section.settings.style_2_url }}" class="style-title style-title-2">
+        {{- section.settings.style_2_title -}}
+      </a>
+    </div>
+    <div class="style">
+      <div class="style-img-container">
+        <img
+          class="style-img style-img-3"
+          src="{{ section.settings.style_3_image | img_url: '300x' }}"
+          alt="{{ section.settings.style_3_title }}"
+        >
+        <div class="style-img-title">{{ section.settings.style_3_image_title }}</div>
+      </div>
+      <a href="{{ section.settings.style_3_url }}" class="style-title style-title-3">
+        {{- section.settings.style_3_title -}}
+      </a>
+    </div>
+  </div>
+</div>
+
+{% javascript %}
+  document.addEventListener('DOMContentLoaded', function() {
+    // Function to handle the redirection
+    var redirectToStyle = function(styleImgClass, styleTitleClass) {
+      var imgElement = document.querySelector('.' + styleImgClass);
+      if (imgElement) {
+        imgElement.addEventListener('click', function() {
+          var styleTitleElement = document.querySelector('.' + styleTitleClass);
+          if (styleTitleElement && styleTitleElement.href) {
+            window.location.href = styleTitleElement.href;
+          }
+        });
+      }
+    };
+
+    // Setup the click event listeners for each style image
+    redirectToStyle('style-img-1', 'style-title-1');
+    redirectToStyle('style-img-2', 'style-title-2');
+    redirectToStyle('style-img-3', 'style-title-3');
+  });
+{% endjavascript %}
+
+{% schema %}
+{
+  "name": "Shop by Style",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "style_1_image",
+      "label": "Style 1 Image"
+    },
+    {
+      "type": "text",
+      "id": "style_1_image_title",
+      "label": "Style 1 Image Title",
+      "default": "Title 1"
+    },
+    {
+      "type": "text",
+      "id": "style_1_title",
+      "label": "Style 1 Title",
+      "default": "LORUM IPSUM"
+    },
+   {
+      "type": "text",
+      "id": "style_1_url",
+      "label": "Style 1 URL",
+      "default": "#"
+    },
+    {
+      "type": "image_picker",
+      "id": "style_2_image",
+      "label": "Style 2 Image"
+    },
+    {
+      "type": "text",
+      "id": "style_2_image_title",
+      "label": "Style 2 Image Title",
+      "default": "Title 2"
+    },
+    {
+      "type": "text",
+      "id": "style_2_title",
+      "label": "Style 2 Title",
+      "default": "LORUM IPSUM"
+    },
+   {
+  "type": "text",
+  "id": "style_2_url",
+  "label": "Style 2 URL",
+  "default": "#"
+},
+    {
+      "type": "image_picker",
+      "id": "style_3_image",
+      "label": "Style 3 Image"
+    },
+    {
+      "type": "text",
+      "id": "style_3_image_title",
+      "label": "Style 3 Image Title",
+      "default": "Title 3"
+    },
+    {
+      "type": "text",
+      "id": "style_3_title",
+      "label": "Style 3 Title",
+      "default": "LORUM IPSUM"
+    },
+    {
+      "type": "text",
+      "id": "style_3_url",
+      "label": "Style 3 URL",
+      "default": "#"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shop by Style",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

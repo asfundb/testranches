@@ -1,0 +1,294 @@
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
+
+<style>
+  @media screen and (min-width: 750px) {
+    .outer-wrapper {
+      display: grid;
+      grid-template-columns: 206px 1fr;
+      gap: 60px;
+      position: relative;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .outer-wrapper {
+      display: flex; 
+      flex-direction: column;
+      position: relative;
+    }
+  }
+
+  .gridd {
+    margin: 0 auto;
+  }
+
+  .divider {
+    height: 1px;
+    background-color: black;
+    margin-bottom: 20px;
+    margin-top: 20px
+  }
+   @media screen and (min-width: 750px) {
+  .collection-list {
+    width: 100%;
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(1, 1fr); /* Creates 2 columns */
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+  }
+  }
+
+  .collection-list {
+    width: 100%;
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 columns */
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+  }
+
+  .collection-list__item {
+    margin-bottom: 5px;
+    page-break-inside: avoid; /* For older browsers */
+    width: 300px;
+  }
+
+  .collection-list__heading {
+    font-size: 40px;
+    margin: 0;
+    width: 40px;
+  }
+
+  .black-link {
+    color: black;
+    text-decoration: none;
+  }
+
+  .inner-flex {
+    display: flex;
+    align-items: start;
+    gap: 300px;
+  }
+
+   @media screen and (max-width: 750px) {
+    .inner-flex {
+      display: flex;
+      align-items: start;
+      gap: 10px;
+      }
+   }
+     @media screen and (max-width: 1250px) {
+    .inner-flex {
+      display: flex;
+      align-items: start;
+      gap: 10%;
+      }
+   }
+
+  .alphabet-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columns for letters */
+    text-align: center;
+    max-width: 400px; /* Adjust as needed */
+    margin: auto;
+  }
+   @media screen and (max-width: 750px) {
+    .alphabet-grid {
+      max-width: 100%; /* Adjust as needed */
+    }
+  }
+
+  .alphabet-grid div {
+    padding: 5px; /* Spacing around letters */
+    font-size: 18px; /* Size of letters */
+    font-weight: bold;
+  }
+  
+  .brand-title {
+    text-align: start;
+    font-size: 28px; /* Size of title */
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .brand-links {
+    min-width: 250px;
+  }
+  
+  .brand-links a {
+    color: black !important;
+    text-decoration: none !important;
+    font-size: 14px;
+  }
+</style>
+
+
+
+<div class="page-width" style="padding: 30px 40px">
+<h1 class="title title--primary inline-richtext{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}" style="text-align: center; margin: 0; text-transform: uppercase; font-weight: bold">
+    {{ section.settings.title }}
+  </h1>
+  <p style="text-transform: uppercase; text-align: center; margin-bottom: 80px; color: black;">--</p>
+<div class="outer-wrapper">
+ <div class="brand-left-inner">
+  <div class="brand-title">Brands</div>
+  <div class="alphabet-grid">
+    {%- assign alphabet = 'A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z' | split: ',' -%}
+    {%- for letter in alphabet -%}
+      {%- assign vendors_exist = false -%}
+      {%- for product_vendor in shop.vendors -%}
+        {%- assign first_letter = product_vendor | first | upcase -%}
+        {%- if first_letter == letter -%}
+          {%- assign vendors_exist = true -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+      <div>
+        {%- if vendors_exist -%}
+          <a href="#brand-{{ letter }}" class="black-link">{{ letter }}</a>
+        {%- else -%}
+          <span style="color: #cccccc">
+            {{ letter }}
+          </span>
+        {%- endif -%}
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+  <div class="gridd">
+   {%- assign current_letter = nil -%}
+    {%- for product_vendor in shop.vendors -%}
+      {%- assign first_letter = product_vendor | slice: 0, 1 -%}
+      {%- if first_letter != current_letter -%}
+        {%- if current_letter != nil -%}
+          </ul>
+        </div> <!-- Closing the previous letter's div and ul if it's not the first iteration -->
+        {%- endif -%}
+        <div class="divider"> </div>
+        <div class="inner-flex">
+          <h2 class="collection-list__heading" id="brand-{{ first_letter }}">{{ first_letter }}</h2>
+          <ul class="collection-list">
+          {%- assign current_letter = first_letter -%}
+      {%- endif -%}
+       <li class="brand-links {{ product_vendor }} black-link collection-list__item grid__item">
+        <a 
+          role="link" aria-disabled="true"
+          href="{{ product_vendor }}"
+          id="{{ product_vendor }}"
+          class=" brand-link" 
+          style="text-decoration: none !important; color: black;">{{ product_vendor | link_to_vendor }}</a> 
+      </li>
+    {%- endfor -%}
+    {%- if current_letter != nil -%}
+      </ul>
+    </div> <!-- Closing the last letter's div and ul -->
+    {%- endif -%}
+
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "t:sections.main-list-collections.name",
+  "class": "section",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "t:sections.main-list-collections.settings.title.label",
+      "default": "Collections"
+    },
+    {
+      "type": "select",
+      "id": "sort",
+      "options": [
+        {
+          "value": "alphabetical",
+          "label": "t:sections.main-list-collections.settings.sort.options__1.label"
+        },
+        {
+          "value": "alphabetical_reversed",
+          "label": "t:sections.main-list-collections.settings.sort.options__2.label"
+        },
+        {
+          "value": "date_reversed",
+          "label": "t:sections.main-list-collections.settings.sort.options__3.label"
+        },
+        {
+          "value": "date",
+          "label": "t:sections.main-list-collections.settings.sort.options__4.label"
+        },
+        {
+          "value": "products_high",
+          "label": "t:sections.main-list-collections.settings.sort.options__5.label"
+        },
+        {
+          "value": "products_low",
+          "label": "t:sections.main-list-collections.settings.sort.options__6.label"
+        }
+      ],
+      "default": "alphabetical",
+      "label": "t:sections.main-list-collections.settings.sort.label"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.main-list-collections.settings.image_ratio.options__1.label"
+        },
+        {
+          "value": "portrait",
+          "label": "t:sections.main-list-collections.settings.image_ratio.options__2.label"
+        },
+        {
+          "value": "square",
+          "label": "t:sections.main-list-collections.settings.image_ratio.options__3.label"
+        }
+      ],
+      "default": "adapt",
+      "label": "t:sections.main-list-collections.settings.image_ratio.label",
+      "info": "t:sections.main-list-collections.settings.image_ratio.info"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 3,
+      "label": "t:sections.main-list-collections.settings.columns_desktop.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-list-collections.settings.header_mobile.content"
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "options": [
+        {
+          "value": "1",
+          "label": "t:sections.main-list-collections.settings.columns_mobile.options__1.label"
+        },
+        {
+          "value": "2",
+          "label": "t:sections.main-list-collections.settings.columns_mobile.options__2.label"
+        }
+      ],
+      "default": "2",
+      "label": "t:sections.main-list-collections.settings.columns_mobile.label"
+    }
+  ]
+}
+{% endschema %}
+
+
+

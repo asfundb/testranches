@@ -1,0 +1,83 @@
+/* .list-menu--right {
+  right: 0;
+}
+
+.list-menu--disclosure {
+  position: absolute;
+  min-width: 100%;
+  width: 100vw;
+  border: 1px solid rgba(var(--color-foreground), 0.2);
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.list-menu--disclosure li {
+  width: 100px;
+}
+
+.list-menu--disclosure:focus {
+  outline: none;
+}
+
+.list-menu__item--active {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.list-menu__item--active:hover {
+  text-decoration-thickness: 0.2rem;
+}
+
+.list-menu--disclosure.localization-selector {
+  max-height: 18rem;
+  overflow: auto;
+  width: 10rem;
+  padding: 0.5rem;
+} */
+
+.list-menu--disclosure {
+  position: absolute;
+  min-width: 100%;
+  width: 100vw;
+  max-height: 550px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; /* Allow items to wrap to the next column */
+  align-content: flex-start; /* Align columns at the top */
+  top: 54px;
+  border-top: 0.5px solid black !important;
+  border-bottom: 0.5px solid black !important;
+}
+
+.list-menu--disclosure li {
+  /* width: 75px; */
+  break-inside: avoid-column; /* Prevent breaking list items across columns */
+}
+
+.list-menu--disclosure:focus {
+  outline: none;
+}
+
+.list-menu__item--active {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.list-menu__item--active:hover {
+  text-decoration-thickness: 0.2rem;
+}
+
+.list-menu--disclosure.localization-selector {
+  max-height: 18rem;
+  overflow: auto;
+  width: 10rem;
+  padding: 0.5rem;
+  column-count: auto; /* Let the browser decide the number of columns based on content */
+  column-gap: 1rem; /* Adjust gap between columns */
+}
+
+/* Additional CSS to handle cases when the menu is close to the right edge of the viewport */
+.list-menu--right {
+  right: 0;
+  left: auto; /* Reset any previously set left property */
+}

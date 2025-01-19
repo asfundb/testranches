@@ -1,0 +1,140 @@
+.site-footer {
+  border-top: 1px solid black;
+}
+.footer-main,
+.footer-sub {
+  width: 100%;
+  padding: 40px 40px 0px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-main {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer-main,
+  .footer-sub {
+    flex-direction: column;
+  }
+}
+
+.footer-left {
+  display: flex;
+  gap: 100px;
+}
+.footer-right {
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  .footer-right {
+    width: 100%;
+  }
+}
+.footer-block__title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.footer-block__title--right {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.footer-block__list {
+  list-style: none;
+  text-indent: 0;
+  padding: 0;
+  line-height: 17px;
+}
+.footer-block__list a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.footer-logo {
+  width: 100px;
+  height: 45px;
+}
+.footer-block__title--right {
+  font-size: 14px;
+  font-weight: 800;
+}
+.footer-block__address {
+  display: flex;
+  gap: 20px;
+}
+.footer-block__address--title {
+  font-weight: 800;
+  color: black;
+}
+.footer-block__address--red {
+  color: #870c16;
+}
+.footer-block__address-stacked {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5px;
+  font-size: 12px;
+}
+.border-right {
+  border-right: 1px solid #870c16;
+  padding-right: 10px;
+}
+
+.footer-email-desc {
+  font-size: 14px;
+  color: black;
+}
+
+.footer-email {
+  border: 2px solid black;
+  padding: 15px 10px;
+  width: 100%;
+}
+
+.footer__list-social {
+  margin-bottom: -35px;
+}
+@media (max-width: 768px) {
+  .footer__list-social {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-left {
+    flex-direction: column;
+    gap: 0;
+  }
+  .footer-block__list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .footer-block__title.active + .footer-block__list {
+    max-height: none;
+  }
+
+  .footer-block__title::after {
+    content: "\002B"; /* Unicode character for "+" sign */
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .footer-left .footer-block {
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .footer-block__title.active::after {
+    content: "\2212"; /* Unicode character for "-" sign */
+  }
+}

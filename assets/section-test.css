@@ -1,0 +1,119 @@
+.brand-slider {
+  width: 100%;
+  max-width: 1650px;
+  margin: 30px auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand-title {
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px 0;
+  flex-shrink: 0;
+  background-color: white;
+  color: black;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.brand:hover .brand-title {
+  background-color: black;
+  color: white;
+}
+
+.brands-slider__carousel {
+  overflow: hidden;
+}
+
+.brands-slider__track {
+  display: flex;
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.brand {
+  flex: 0 0 auto;
+  width: 300px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.brand a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+}
+
+.brand img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  flex-grow: 1;
+}
+
+/* .brand-title {
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px 0;
+  flex-shrink: 0;
+} */
+
+.brands-slider__nav {
+  display: none; /* Hide the navigation buttons by default */
+}
+
+@media (max-width: 768px) {
+  .brand {
+    width: 80%;
+    margin: 0px 10%;
+  }
+
+  .brands-slider__nav {
+    display: flex; /* Show the navigation buttons on mobile devices */
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+}
+
+.brands-slider__prev,
+.brands-slider__next {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+.brands-slider__title {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #000;
+  margin-bottom: 20px;
+}
+@media (max-width: 429px) {
+  .brand {
+    width: 80%;
+    margin: 0px 10%;
+  }
+}
+.brands-slider__prev-icon.hidden,
+.brands-slider__next-icon.hidden {
+  display: none;
+}

@@ -1,0 +1,34 @@
+.testimonial {
+  width: 100%;
+  background: #2d2d2d;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow-x: hidden;
+  color: white;
+  gap: 1px;
+}
+
+.testimonial-quotes {
+  width: auto;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  gap: 30px;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.testimonial-quotes p {
+  white-space: no-wrap;
+}
+
+.testimonial-quotes::-webkit-scrollbar {
+  display: none !important;
+}
+
+.testimonial-quotes {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}

@@ -1,0 +1,91 @@
+{{ 'section-testimonial.css' | asset_url | stylesheet_tag }}
+
+<div class="testimonial">
+  <div class="testimonial-quotes">
+    <p>“{{ section.settings.quote1 }}”</p>
+    <div>**</div>
+    
+    <p>“{{ section.settings.quote2 }}”</p>
+    <div>**</div>
+    
+    <p>“{{ section.settings.quote3 }}”</p>
+    <div>**</div>
+    
+    <p>“{{ section.settings.quote4 }}”</p>
+    <div>**</div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Testimonial",
+    "settings": [
+      {
+        "type": "text",
+        "id": "quote1",
+        "label": "Testimonial Quote 1",
+        "default": "LOTS OF OPTIONS FOR COWBOY ATTIRE!"
+      },
+      {
+        "type": "text",
+        "id": "quote2",
+        "label": "Testimonial Quote 2",
+        "default": "LOTS OF OPTIONS FOR COWBOY ATTIRE!"
+      },
+      {
+        "type": "text",
+        "id": "quote3",
+        "label": "Testimonial Quote 3",
+        "default": "LOTS OF OPTIONS FOR COWBOY ATTIRE!"
+      },
+      {
+        "type": "text",
+        "id": "quote4",
+        "label": "Testimonial Quote 4",
+        "default": "LOTS OF OPTIONS FOR COWBOY ATTIRE!"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Testimonial"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+document.addEventListener('DOMContentLoaded', function () {
+  var quotesContainer = document.querySelector('.testimonial-quotes');
+  var quotes = document.querySelectorAll('.testimonial-quotes p');
+  var totalWidth = 0;
+
+  // Clone all quotes and append them to the container
+  quotes.forEach(function(quote) {
+    var clone = quote.cloneNode(true);
+    quotesContainer.appendChild(clone);
+    totalWidth += quote.offsetWidth;
+  });
+
+  var scrollAmount = 0;
+  var scrollPerFrame = 1; // Adjust this value for faster or slower speed
+
+  function slideQuotes() {
+    if (scrollAmount >= totalWidth) {
+      // Reset scroll position to start
+      quotesContainer.scrollLeft = 0;
+      scrollAmount = 0;
+    } else {
+      quotesContainer.scrollBy(scrollPerFrame, 0);
+      scrollAmount += scrollPerFrame;
+    }
+    window.requestAnimationFrame(slideQuotes);
+  }
+
+  window.requestAnimationFrame(slideQuotes);
+});
+
+{% endjavascript %}

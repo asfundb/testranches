@@ -1,0 +1,226 @@
+{% comment %}
+  Section: Brand Grid
+{% endcomment %}
+<section class="brand-grid">
+  <div class="brand-grid__container">
+    {% for block in section.blocks %}
+      <a href="{{ block.settings.vendor_link }}" class="brand-grid__item-link">
+        <div class="brand-grid__item">
+          <div class="brand-grid__content">
+            <div class="brand-grid__logo" style="background-color: {{ block.settings.logo_background_color }};">
+              {% if block.settings.logo_image != blank %}
+                {{ block.settings.logo_image | img_url: '100x100' | img_tag: block.settings.brand_name, 'brand-grid__logo-image' }}
+              {% else %}
+                <span class="brand-grid__logo-text">{{ block.settings.brand_name | slice: 0, 2 }}</span>
+              {% endif %}
+            </div>
+            <div class="brand-grid__text">
+              <h3 class="brand-grid__name">{{ block.settings.brand_name }}</h3>
+              <p class="brand-grid__subtext">{{ block.settings.brand_subtext }}</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+  {% if section.settings.show_view_all %}
+    <div class="brand-grid__view-all">
+      <a href="{{ section.settings.view_all_link }}" class="brand-grid__view-all-link">
+        {{ section.settings.view_all_text }}
+        <img src="https://cdn.shopify.com/s/files/1/0262/2636/0383/files/right-chevron.svg?v=1720189402" alt="Right chevron" class="chevron-icon">
+      </a>
+    </div>
+  {% endif %}
+</section>
+<style>
+  .brand-grid {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+  .brand-grid__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  .brand-grid__item-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  .brand-grid__item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: auto;
+    transition: box-shadow 0.3s ease;
+  }
+  .brand-grid__item-link:hover .brand-grid__item {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .brand-grid__content {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+  .brand-grid__logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+  .brand-grid__logo-image {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+  }
+  .brand-grid__logo-text {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  .brand-grid__text {
+    flex-grow: 1;
+  }
+  .brand-grid__name {
+    font-weight: bold;
+    margin: 0 0 5px;
+  }
+  .brand-grid__subtext {
+    color: #666;
+    font-size: 0.9em;
+    margin: 0;
+  }
+  .brand-grid__view-all {
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: .1px solid #cccc;
+    padding-bottom: 20px;
+  }
+  .brand-grid__view-all-link {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+  }
+  .chevron-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+
+  /* Mobile styles */
+  @media screen and (max-width: 767px) {
+    .brand-grid__container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+    .brand-grid__item {
+      padding: 15px;
+    }
+    .brand-grid__logo {
+      width: 50px;
+      height: 50px;
+      margin-right: 0px !important;
+      margin-bottom: 20px;
+    }
+    .brand-grid__name {
+      font-size: 0.9em;
+    }
+    .brand-grid__subtext {
+      font-size: 0.8em;
+    }
+    .brand-grid__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Brand Grid",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_view_all",
+      "label": "Show View All link",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "view_all_text",
+      "label": "View All text",
+      "default": "View All Brands"
+    },
+    {
+      "type": "url",
+      "id": "view_all_link",
+      "label": "View All link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "brand",
+      "name": "Brand",
+      "settings": [
+        {
+          "type": "text",
+          "id": "brand_name",
+          "label": "Brand Name",
+          "default": "Brand Name"
+        },
+        {
+          "type": "text",
+          "id": "brand_subtext",
+          "label": "Brand Subtext",
+          "default": "Brand Type"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo_image",
+          "label": "Logo Image"
+        },
+        {
+          "type": "color",
+          "id": "logo_background_color",
+          "label": "Logo Background Color",
+          "default": "#000000"
+        },
+        {
+          "type": "url",
+          "id": "vendor_link",
+          "label": "Vendor Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Brand Grid",
+      "blocks": [
+        {
+          "type": "brand"
+        },
+        {
+          "type": "brand"
+        },
+        {
+          "type": "brand"
+        },
+        {
+          "type": "brand"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

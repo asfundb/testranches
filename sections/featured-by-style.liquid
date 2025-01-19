@@ -1,0 +1,312 @@
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'template-collection.css' | asset_url | stylesheet_tag }}
+
+<style>
+  .choose-by-style {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto 20px auto;
+    padding: 0 20px;
+  }
+  
+  .choose-by-style h2 {
+    font-size: 1.6em;
+    font-weight: bold;
+  }
+
+  .gender-filter, .style-filter {
+    margin-bottom: 20px;
+  }
+
+  .gender-button, .style-button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 14px;
+    color: black !important;
+  }
+
+  .gender-button.active, .style-button.active {
+    background-color: #333;
+    color: white !important;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .product-item {
+    display: none;
+  }
+
+  .choose-by-style-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .view-full-collection {
+    display: none;
+    margin-top: 20px;
+  }
+
+  .view-full-collection a {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 0.1px solid #cccc;
+    padding-bottom: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .chevron-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, auto);
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .product-grid {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 20px;
+    }
+
+    .product-item {
+      flex: 0 0 100%;
+      scroll-snap-align: start;
+      margin-right: 20px;
+    }
+
+    .gender-button, .style-button {
+      padding: 8px 15px;
+      font-size: 12px;
+    }
+    .choose-by-style-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  }
+</style>
+
+<div class="choose-by-style">
+  <h2>{{ section.settings.title }}</h2>
+
+  <div class="choose-by-style-toolbar">
+    <div class="gender-filter">
+      <button class="gender-button active" data-gender="mens">MENS</button>
+      <button class="gender-button" data-gender="womens">WOMENS</button>
+    </div>
+    
+    <div class="style-filter">
+      <button class="style-button active" data-style="casual">CASUAL</button>
+      <button class="style-button" data-style="work">WORK</button>
+      <button class="style-button" data-style="western">WESTERN</button>
+    </div>
+  </div>
+  
+  <div class="product-grid">
+    {% for product in section.settings.mens_casual.products limit: 8 %}
+      <div class="product-item" data-gender="mens" data-style="casual" data-visible="true">
+        {% render 'card-product', card_product: product %}
+      </div>
+    {% endfor %}
+
+    {% for product in section.settings.mens_work.products limit: 8 %}
+      <div class="product-item" data-gender="mens" data-style="work" data-visible="true">
+        {% render 'card-product', card_product: product %}
+      </div>
+    {% endfor %}
+
+    {% for product in section.settings.mens_western.products limit: 8 %}
+      <div class="product-item" data-gender="mens" data-style="western" data-visible="true">
+        {% render 'card-product', card_product: product %}
+      </div>
+    {% endfor %}
+
+    {% for product in section.settings.womens_casual.products limit: 8 %}
+      <div class="product-item" data-gender="womens" data-style="casual" data-visible="true">
+        {% render 'card-product', card_product: product %}
+      </div>
+    {% endfor %}
+
+    {% for product in section.settings.womens_work.products limit: 8 %}
+      <div class="product-item" data-gender="womens" data-style="work" data-visible="true">
+        {% render 'card-product', card_product: product %}
+      </div>
+    {% endfor %}
+
+    {% for product in section.settings.womens_western.products limit: 8 %}
+      <div class="product-item" data-gender="womens" data-style="western" data-visible="true">
+        {% render 'card-product', card_product: product %}
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="view-full-collection" data-gender="mens" data-style="casual">
+    <a href="{{ section.settings.mens_casual.url }}">
+      View Full Collection
+      <img src="https://cdn.shopify.com/s/files/1/0262/2636/0383/files/right-chevron.svg?v=1720189402" alt="Right chevron" class="chevron-icon">
+    </a>
+  </div>
+  <div class="view-full-collection" data-gender="mens" data-style="work">
+    <a href="{{ section.settings.mens_work.url }}">
+      View Full Collection
+      <img src="https://cdn.shopify.com/s/files/1/0262/2636/0383/files/right-chevron.svg?v=1720189402" alt="Right chevron" class="chevron-icon">
+    </a>
+  </div>
+  <div class="view-full-collection" data-gender="mens" data-style="western">
+    <a href="{{ section.settings.mens_western.url }}">
+      View Full Collection
+      <img src="https://cdn.shopify.com/s/files/1/0262/2636/0383/files/right-chevron.svg?v=1720189402" alt="Right chevron" class="chevron-icon">
+    </a>
+  </div>
+  <div class="view-full-collection" data-gender="womens" data-style="casual">
+    <a href="{{ section.settings.womens_casual.url }}">
+      View Full Collection
+      <img src="https://cdn.shopify.com/s/files/1/0262/2636/0383/files/right-chevron.svg?v=1720189402" alt="Right chevron" class="chevron-icon">
+    </a>
+  </div>
+  <div class="view-full-collection" data-gender="womens" data-style="work">
+    <a href="{{ section.settings.womens_work.url }}">
+      View Full Collection
+      <img src="https://cdn.shopify.com/s/files/1/0262/2636/0383/files/right-chevron.svg?v=1720189402" alt="Right chevron" class="chevron-icon">
+    </a>
+  </div>
+  <div class="view-full-collection" data-gender="womens" data-style="western">
+    <a href="{{ section.settings.womens_western.url }}">
+      View Full Collection
+      <img src="https://cdn.shopify.com/s/files/1/0262/2636/0383/files/right-chevron.svg?v=1720189402" alt="Right chevron" class="chevron-icon">
+    </a>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const genderButtons = document.querySelectorAll('.gender-button');
+    const styleButtons = document.querySelectorAll('.style-button');
+    const productItems = document.querySelectorAll('.product-item');
+    const viewFullCollectionLinks = document.querySelectorAll('.view-full-collection');
+    
+    function filterProducts() {
+      const activeGender = document.querySelector('.gender-button.active').dataset.gender;
+      const activeStyle = document.querySelector('.style-button.active').dataset.style;
+      
+      productItems.forEach(item => {
+        const itemGender = item.dataset.gender;
+        const itemStyle = item.dataset.style;
+        
+        if (itemGender === activeGender && itemStyle === activeStyle) {
+          item.dataset.visible = 'true';
+          item.style.display = 'block';
+        } else {
+          item.dataset.visible = 'false';
+          item.style.display = 'none';
+        }
+      });
+
+      viewFullCollectionLinks.forEach(link => {
+        const linkGender = link.dataset.gender;
+        const linkStyle = link.dataset.style;
+
+        if (linkGender === activeGender && linkStyle === activeStyle) {
+          link.style.display = 'block';
+        } else {
+          link.style.display = 'none';
+        }
+      });
+    }
+    
+    genderButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        genderButtons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+        filterProducts();
+      });
+    });
+    
+    styleButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        styleButtons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+        filterProducts();
+      });
+    });
+    
+    // Initial filter on page load
+    filterProducts();
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Choose by Style",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "CHOOSE BY STYLE"
+    },
+    {
+      "type": "collection",
+      "id": "mens_casual",
+      "label": "Men's Casual Collection"
+    },
+    {
+      "type": "collection",
+      "id": "mens_work",
+      "label": "Men's Work Collection"
+    },
+    {
+      "type": "collection",
+      "id": "mens_western",
+      "label": "Men's Western Collection"
+    },
+    {
+      "type": "collection",
+      "id": "womens_casual",
+      "label": "Women's Casual Collection"
+    },
+    {
+      "type": "collection",
+      "id": "womens_work",
+      "label": "Women's Work Collection"
+    },
+    {
+      "type": "collection",
+      "id": "womens_western",
+      "label": "Women's Western Collection"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Choose by Style"
+    }
+  ]
+}
+{% endschema %}

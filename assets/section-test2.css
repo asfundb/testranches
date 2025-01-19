@@ -1,0 +1,107 @@
+.style-slider {
+  width: 100%;
+  margin: 50px 0;
+}
+
+.style-slider__title {
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.style-slider__carousel {
+  width: auto;
+  display: flex;
+  gap: 10px;
+  overflow-x: hidden;
+  justify-content: space-evenly;
+}
+
+.style {
+  width: 27%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  cursor: pointer;
+  transition: 250ms ease-in;
+}
+
+.style:hover,
+.style:hover > a {
+  background-color: #870c16;
+  color: white;
+}
+
+.style-title {
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  color: black;
+}
+
+.style-title:hover {
+  color: white;
+}
+
+.progress {
+  margin: 20px;
+  width: 30%;
+  background-color: #e0e0e0; /* Color of the progress base */
+  height: 7px;
+  overflow: hidden; /* Ensures the inner bar stays within the bounds of the base */
+  position: relative; /* Needed if you want to add labels or such inside the progress bar */
+  display: block !important;
+}
+
+.progress-bar {
+  height: 7px;
+  background-color: #870c16;
+  display: block !important;
+}
+
+.style-img {
+  width: 100%;
+  height: 100%;
+}
+
+.style-img-container {
+  position: relative;
+}
+
+
+.style-img-title {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+@media screen and (min-width: 650px) {
+  .style-img-title {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .style-img-title {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .style {
+    width: 100%;
+    max-width: none; /* Override any max-width if set */
+  }
+
+  .style-slider__carousel {
+    padding: 0 10px;
+    overflow-x: scroll; /* Enable horizontal scrolling */
+  }
+}

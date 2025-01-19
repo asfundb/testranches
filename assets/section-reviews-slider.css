@@ -1,0 +1,150 @@
+.reviews-slider {
+  width: 100vw;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #303030;
+  overflow-x: hidden;
+}
+
+.reviews-slider__header {
+  text-align: center;
+  width: 100%;
+}
+.reviews-slider__title {
+  font-weight: bold;
+  font-size: 4rem;
+  color: white;
+  letter-spacing: 3px;
+}
+
+@media screen and (max-width: 450px) {
+  .reviews-slider__title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+}
+
+.reviews-slider__subheader {
+  display: flex;
+  gap: 2px;
+  color: white;
+  justify-content: center;
+  font-size: 1.8rem;
+}
+
+.reviews-slider__track {
+  display: flex;
+  width: 100%;
+  /* overflow: hidden; */
+  position: relative;
+}
+
+.reviews-slider__reviews-container {
+  display: flex;
+  padding-right: 5%;
+  align-items: end;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+}
+.reviews-slider__review {
+  width: 20%;
+  border-radius: 20px;
+  border: 0.5px solid #cacaca;
+  padding: 20px 30px;
+  background-color: white;
+  margin: 20px 20px;
+  min-width: 300px;
+  max-width: 300px;
+  flex-shrink: 0;
+}
+
+.reviews-slider__review-text {
+  font-size: 14px;
+  line-height: 22px;
+  padding-bottom: 30px;
+}
+
+.reviews-slider__review-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.reviews-slider__review-info-each {
+  font-size: 14px;
+  font-weight: semibold;
+}
+.reviews-slider__info {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  width: 100%;
+  margin-top: 30px;
+  align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+  .reviews-slider__info {
+    gap: 30px;
+  }
+}
+
+.reviews-slider__info-each {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews-slider__info-each span {
+  /* margin: 0; */
+  padding: 0;
+  margin: -10px 0 0 0;
+}
+
+.reviews-slider__info-bold {
+  font-size: 20px;
+  margin-bottom: -10px;
+  font-weight: bold;
+}
+.reviews-slider__info-small {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.reviews-slider__button {
+  background: #870c16;
+  color: white;
+}
+
+.desktopbtn {
+  display: block;
+  text-decoration: none;
+}
+
+.mobilebtn {
+  display: none;
+  margin: 20px auto;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 450px) {
+  .desktopbtn {
+    display: none;
+  }
+
+  .mobilebtn {
+    display: block;
+  }
+}
+
+.highlighter {
+  background: #870c16;
+  color: white;
+  padding: 0 2px;
+}
+
+.google-logo img {
+  height: 13px;
+  width: 13px;
+}

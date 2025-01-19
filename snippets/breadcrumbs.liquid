@@ -1,0 +1,197 @@
+{% unless template == 'index' or template == 'cart' or template == '404' or request.path == '/pages/newsletter' %}
+
+{% assign t = template | split: '.' | first %}
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Lexend:wght@400;500;600;700&display=swap');
+  
+  @media screen and (max-width: 749px) {
+    .breadcrumbs {
+      display: none;
+    }
+  }
+
+  {% comment %} .breadcrumbs {
+    padding-left: 5rem
+  } {% endcomment %}
+
+  .breadcrumbs a li ul ol {
+    font-family: 'IBM Plex Mono' !important;
+    transition: 350ms ease-in;
+  }
+
+  .breadcrumbs li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .breadcrumbs a {
+    text-decoration: none; 
+    color: black;
+    font-family: 'IBM Plex Mono' !important;
+    font-size: 14px;
+    text-transform: uppercase !important;
+    font-weight: light !important;
+
+  }
+
+  @media screen and (max-width: 989px) {
+    .breadcrumbs {
+    padding-left: 1.5rem;
+  }
+    .breadcrumbs a {
+      font-size: 10px;
+    }
+  }
+</style>
+
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const collection = urlParams.get('collection'); // Get the collection query parameter
+    const collectionUrl = urlParams.get('collection_url'); // Get the collection query parameter
+    console.log('test', collection); // Log it to the console or do something with it
+
+    // Example: Dynamically update an element's content based on the collection
+    if (collection) {
+      const collectionElement = document.getElementById('collection_handle');
+      if (collectionElement) {
+        collectionElement.textContent = collection.replace(/-/g, ' '); // Replace hyphens with spaces for display
+        collectionElement.href = collectionUrl;
+      }
+    }
+  });
+</script>
+
+  
+{% assign default_justify_content = false %}
+
+{% case t %}
+  {% when 'page' %}
+    {% assign default_justify_content = false %}
+    <!-- your existing code -->
+  {% when 'product' %}
+    {% assign default_justify_content = true %}
+    <!-- your existing code -->
+  {% when 'collection' and collection.handle %}
+    {% assign default_justify_content = false %}
+    <!-- your existing code -->
+  {% when 'blog' %}
+    {% assign default_justify_content = false %}
+    <!-- your existing code -->
+  {% when 'article' %}
+    {% assign default_justify_content = false %}
+    <!-- your existing code -->
+{% endcase %}
+
+  {% if request.path contains '/collections/' %}
+  {% assign collection_handle = request.path %}
+{% endif %}
+
+<nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs" style="text-align: center; {% if default_justify_content %}justify-content: start; margin-bottom: -20px; z-index: 2;{% endif %}">
+{% if t == 'product' %}
+  <ol style="list-style: none; display: flex; {% if default_justify_content %}justify-content: start;{% else %}justify-content: center;{% endif %} gap: 2px; margin-bottom: 0px; padding: 0; padding-left: 50px;">
+{% else %}
+  <ol style="list-style: none; display: flex; {% if default_justify_content %}justify-content: start;{% else %}justify-content: center;{% endif %} gap: 2px; margin-bottom: 0px; padding: 0;">
+{% endif %}
+    <li>
+      <a href="/" title="Home">HOME</a> / 
+    </li>
+
+  {% case t %}
+  {% when 'page' %}
+
+    <li>
+      <a href="{{ page.url }}" aria-current="page">{{ page.title }}</a> / 
+    </li>
+
+
+{% when 'product' %}
+<script>
+  console.log({{ product | json }});
+</script>
+  <li>
+    <!-- {% assign vendor_handle = product.vendor | handleize %} -->
+    <!-- <a href="/collections/vendors?q={{ vendor_handle }}" aria-current="page">{{ product.vendor }}</a> / -->
+    <!-- <a href="/collections/vendors?q={{ vendor_handle | replace: '-', '%20' }}" aria-current="page">{{ product.vendor }}</a> / -->
+    <a href="/collections/vendors?q={{ product.vendor | replace: '-', '%20' | replace: '&', '%26' | replace: '/', '%2F'}}" aria-current="page">{{ product.vendor }}</a> /
+  </li>
+
+<!-- <li>
+    {% assign title_parts = product.title | split: ' ' %}
+    <a href="{{ product.url }}" aria-current="page">
+      {% for part in title_parts %}
+        {% assign first_char = part | slice: 0 %}
+        {% assign first_two = part | slice: 0, 2 %}
+        {% if first_char != '0' and first_char != '1' and first_char != '2' and first_char != '3' and first_char != '4' and first_char != '5' and first_char != '6' and first_char != '7' and first_char != '8' and first_char != '9' and first_char != 'A' and first_two != 'MC' and is_cm_code != 'CM' %}
+          {{ part }} 
+        {% endif %}
+      {% endfor %}
+    </a> /
+  </li> -->
+              <li>
+            {% assign title_parts = product.title | split: ' ' %}
+            <a href="{{ product.url }}" aria-current="page">
+              {% for part in title_parts %}
+                {% assign first_char = part | slice: 0 %}
+                {% assign first_two = part | slice: 0, 2 %}
+                {% if first_char contains '0' or first_char contains '1' or first_char contains '2' or first_char contains '3' or first_char contains '4' or first_char contains '5' or first_char contains '6' or first_char contains '7' or first_char contains '8' or first_char contains '9' or first_two == 'MC' or first_two == 'CM' or part contains '0' or part contains '1' or part contains '2' or part contains '3' or part contains '4' or part contains '5' or part contains '6' or part contains '7' or part contains '8' or part contains '9' %}
+                  {% continue %}
+                {% endif %}
+                {{ part }} 
+              {% endfor %}
+            </a> /
+          </li>
+
+  {% when 'collection' and collection.handle %}
+<script>
+  console.log({{ collection | json }});
+</script>
+
+    {% if current_tags %}
+      <li>{{ collection.title | link_to: collection.url }}</li> / 
+      <li>
+        {% capture tag_url %}{{ collection.url }}/{{ current_tags | join: "+"}}{% endcapture %}
+        <a href="{{ tag_url }}" aria-current="page">{{ current_tags | join: " + "}}</a> /
+      </li>
+    {% else %}
+      <li>
+        <a href="{{ collection.url }}" aria-current="page">{{ collection.title }}</a> /
+      </li>
+    {% endif %}
+
+  {% when 'blog' %}
+
+    {% if current_tags %}
+      <li>{{ blog.title | link_to: blog.url }}</li> /
+      <li>
+        {% capture tag_url %}{{blog.url}}/tagged/{{ current_tags | join: "+" }}{% endcapture %}
+        <a href="{{ tag_url }}" aria-current="page">{{ current_tags | join: " + " }}</a>
+      </li>
+    {% else %}
+      <li>
+        <a href="{{ blog.url }}" aria-current="page">{{ blog.title }}</a>
+      </li>
+    {% endif %}
+
+  {% when 'article' %}
+
+    <li>{{ blog.title | link_to: blog.url }}</li> /
+    <li>
+      <a href="{{ article.url }}" aria-current="page">{{ article.title }}</a> 
+    </li>
+
+  {% else %}
+
+    <li aria-current="page">
+      <a href="{{ request.path }}" aria-current="page">{{ page_title }}</a> 
+    </li>
+
+  {% endcase %}
+
+</nav>
+  </ol>
+  
+{% endunless %}

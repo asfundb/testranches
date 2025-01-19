@@ -1,0 +1,382 @@
+<div class="page-width out-of-stock-container">
+  <div class="out-of-stock-grid">
+    <div class="out-of-stock-content">
+      <div class="content-wrapper">
+        <h1 class="sold-out-heading" style="">SO POPULAR, IT'S SOLD OUT</h1>
+
+        <div class="product-info">
+ {% if product.vendor %}
+            <div class="info-section">
+              <p class="vendor-name">ID: {{ product.id }}</p>
+            </div>
+          {% endif %}
+          
+          {% if product.vendor %}
+            <div class="info-section">
+              <p class="vendor-name">BRAND: {{ product.vendor }}</p>
+            </div>
+          {% endif %}
+          
+          <div class="info-section">
+            <h2 class="product-title">{{ product.title }}</h2>
+          </div>
+          
+          {% if product.description != blank %}
+            <div class="info-section">
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="description-content">
+                <span>Product Description</span>
+                <svg class="icon-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none">
+                  <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </button>
+              <div class="accordion-content" id="description-content" hidden>
+                {{ product.description }}
+              </div>
+            </div>
+          {% endif %}
+
+          <div class="info-section prod-enquiry">
+            <a href="mailto:{{ shop.email }}?subject=Product%20Enquiry%20-%20{{ product.id }}&body=Hello%2C%0A%0AI%20am%20interested%20in%20the%20{{ product.title | url_encode }}%20(Product%20ID%3A%20{{ product.id }})%20that%20is%20currently%20out%20of%20stock.%0A%0ACould%20you%20please%20provide%20information%20about%3A%0A-%20Expected%20restock%20date%0A-%20Alternative%20options%0A-%20Notification%20when%20back%20in%20stock%0A%0AThank%20you%2C%0A" class="enquiry-link">
+              <span>Enquire about this product</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="button-container">
+          {% if product.vendor %}
+            <a href="/collections/vendors?q={{ product.vendor | url_encode }}" class="button button--primary">
+              VIEW MORE {{ product.vendor | upcase }} PRODUCTS
+            </a>
+          {% endif %}
+          
+          <a href="/" class="button button--secondary">
+            CONTINUE SHOPPING
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="out-of-stock-media">
+      <div class="product__media-gallery">
+        {%- if product.media.size > 0 -%}
+          <div class="main-image-container">
+            <img
+              src="{{ product.featured_media | image_url: width: 600 }}"
+              alt="{{ product.featured_media.alt | escape }}"
+              class="main-image"
+              id="MainImage"
+              loading="lazy"
+              width="{{ product.featured_media.width }}"
+              height="{{ product.featured_media.height }}"
+            >
+          </div>
+
+          {%- if product.media.size > 1 -%}
+            <div class="product__thumbnails">
+              {%- for media in product.media -%}
+                <button 
+                  class="thumbnail-item{% if forloop.first %} active{% endif %}"
+                  data-image-url="{{ media | image_url: width: 600 }}"
+                  data-image-id="{{ media.id }}"
+                  {% if forloop.first %}aria-current="true"{% endif %}
+                >
+                  <img
+                    src="{{ media | image_url: width: 100 }}"
+                    alt="{{ media.alt | escape }}"
+                    loading="lazy"
+                    width="100"
+                    height="{{ 100 | divided_by: media.aspect_ratio | round }}"
+                  >
+                </button>
+              {%- endfor -%}
+            </div>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const mainImage = document.getElementById('MainImage');
+    const thumbnails = document.querySelectorAll('.thumbnail-item');
+    const accordion = document.querySelector('.accordion-trigger');
+    const content = document.querySelector('.accordion-content');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', function() {
+        // Update main image
+        mainImage.src = this.dataset.imageUrl;
+        mainImage.parentElement.style.opacity = 0;
+        
+        // Add fade effect
+        setTimeout(() => {
+          mainImage.parentElement.style.opacity = 1;
+        }, 50);
+
+        // Update active state
+        thumbnails.forEach(thumb => thumb.classList.remove('active'));
+        this.classList.add('active');
+        
+        // Update aria-current
+        thumbnails.forEach(thumb => thumb.removeAttribute('aria-current'));
+        this.setAttribute('aria-current', 'true');
+      });
+    });
+
+    if (accordion) {
+      accordion.addEventListener('click', function() {
+        const isExpanded = accordion.getAttribute('aria-expanded') === 'true';
+        
+        accordion.setAttribute('aria-expanded', !isExpanded);
+        content.hidden = isExpanded;
+      });
+    }
+  });
+</script>
+
+<style>
+
+ @media screen and (min-width: 991px) {
+    .out-of-stock-container {
+      height: 80vh;
+    }
+  }
+  
+  
+  .out-of-stock-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0; /* Reduced padding */
+  }
+  
+  .out-of-stock-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    width: 100%;
+    padding: 0% 4%;
+  }
+  
+  
+  .out-of-stock-content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .content-wrapper {
+    width: 100%;
+  }
+  
+  .sold-out-heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 3rem;
+    line-height: 1.1;
+  }
+  
+  .product-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+    color: black;
+    
+  }
+  
+  .vendor-name {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 400;
+    color: black;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+  
+  .button {
+    width: 100%;
+    max-width: 400px;
+    padding: 1.2rem;
+    font-size: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+  }
+  
+  .button:hover {
+    opacity: 0.8;
+  }
+  
+  .button--primary {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .button--secondary {
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #000;
+  }
+
+  .product__media-gallery {
+    opacity: 0.85;
+    max-width: 600px; 
+    margin: 0 auto;
+  }
+
+  .main-image-container {
+    margin-bottom: 1rem;
+    transition: opacity 0.3s ease;
+  }
+
+  .main-image {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .product__thumbnails {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    padding-bottom: 1rem;
+    justify-content: start;
+  }
+
+  .thumbnail-item {
+    flex: 0 0 80px; /* Reduced thumbnail size */
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+  }
+
+  .thumbnail-item:hover,
+  .thumbnail-item.active {
+    opacity: 1;
+  }
+
+  .thumbnail-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  @media screen and (max-width: 989px) {
+    .out-of-stock-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    .out-of-stock-content {
+      order: 2;
+      text-align: center;
+    }
+    
+    .button-container {
+      align-items: center;
+    }
+    
+    .sold-out-heading {
+      font-size: 2.5rem;
+    }
+
+    .product__media-gallery {
+      max-width: 400px; /* Smaller on mobile */
+    }
+  }
+
+  .info-section {
+    border-top: 1px solid rgba(var(--color-foreground), 0.1);
+    padding: 1rem 0;
+  }
+
+  .info-section > * {
+    text-align: left;
+  }
+
+  .accordion-trigger {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .accordion-trigger span {
+    text-align: left;
+  }
+
+  .accordion-content {
+    padding-top: 1rem;
+    line-height: 1.5;
+    text-align: left;
+    font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 989px) {
+    .info-section > * {
+      text-align: center;
+    }
+    
+    .accordion-trigger {
+      justify-content: center;
+      gap: 1rem;
+    }
+    
+    .accordion-trigger span {
+      text-align: center;
+    }
+    
+    .accordion-content {
+      text-align: center;
+    }
+
+    .accordion-content li {
+      list-style: none;
+    }
+  }
+
+  .enquiry-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: rgb(var(--color-foreground));
+    font-size: 1.2rem;
+    transition: opacity 0.2s ease;
+  }
+
+  .enquiry-link:hover {
+    opacity: 0.8;
+  }
+
+  @media screen and (max-width: 989px) {
+    .enquiry-link {
+      justify-content: center;
+    }
+  }åå
+</style>

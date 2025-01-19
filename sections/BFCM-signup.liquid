@@ -1,0 +1,81 @@
+{% javascript %}
+  document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+    // Target the div with class klaviyo-form-SJsN6p
+    var klaviyoForm = document.querySelector('.klaviyo-form-Uth4Vy');
+
+    // Check if the klaviyo form has any child elements
+    if (klaviyoForm && klaviyoForm.children.length === 0) {
+      // Create a container <div> for the message and the image
+      var container = document.createElement('div');
+
+      // Set the style for the container
+      container.style.textAlign = 'center';
+      container.style.paddingTop = '150px';
+      container.style.display = 'flex';
+      container.style.alignItems = 'center';
+      container.style.justifyContent = 'center';
+
+      // Create and append the text node to the container
+      var message = document.createElement('span');
+      message.textContent = 'You have already signed up ';
+      container.appendChild(message);
+
+      // Create and append the <img> element to the container
+      var image = document.createElement('img');
+      image.src = 'https://cdn-icons-png.flaticon.com/128/5610/5610944.png';
+      image.alt = 'Signed up';
+      // Optional: Set image size if needed
+      image.style.width = '24px';
+      image.style.height = '24px';
+      image.style.marginLeft = '5px';
+      container.appendChild(image);
+
+      // Append the container to the klaviyo form
+      klaviyoForm.appendChild(container);
+    }
+  }, 3000);
+});
+{% endjavascript %}
+
+{% style %}
+  #first_name_01JCEE9JS3SPX6S28HXTPFHW9T, #email_01JCEE9JRWX8P7ZC6FB1ENJ76B {
+    border-radius: 0px !important;
+  }
+  .kl-private-reset-css-Xuajs1 button {
+    border-radius: 0px !important;
+  }
+{% endstyle %}
+
+<div class="newsletter-signup">
+  <!-- <div class="newsletter-signup__heading">WEI'S BRAND HAT GIVEAWAY</div> -->
+  <div class="newsletter-signup__images">
+    <img class="newsletter-signup__image-bfcm" src="https://cdn.shopify.com/s/files/1/0262/2636/0383/files/0Q5A8719-Edit-Edit.jpg?v=1731363318"/ >
+  </div>
+  <div class="newsletter-signup__body">
+  <!-- <div class="newsletter-signup__main-text">
+Ready for a Free Gift? Place an order during our BFCM and be one of the first 100 to receive a limited-edition hat from Wei’s. Don’t wait – sign up today! </div> -->
+<div class="newsletter-signup__form-bfcm">
+  
+<div class="klaviyo-form-Uth4Vy"></div>
+</div>
+  </div>
+  
+  <div class="newsletter-signup__imagesBody-bfcm">
+    
+
+</div>
+
+
+{% schema %}
+  {
+    "name": "BCFM-signup",
+    "settings": [],
+    "presets": [
+    {
+      "name": "BCFM-signup",
+      "category": "Custom"
+    }
+  ]
+  }
+{% endschema %}

@@ -1,0 +1,607 @@
+<div class="hero-banner-title onest-normal">{{ section.settings.title }}</div>
+<div class="hero-wrapper">
+  <div class="hero-banner">
+    <a class="hero-bg-img hero-bg-left" href="{{ section.settings.button_link }}">
+      <div class="hero-inner">
+        <div class="hero-inner-left onest-light">
+          {{ section.settings.description }}
+        </div>
+        <div class="hero-inner-right onest-medium">
+          {{ section.settings.button_text }}
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="hero-banner hero-banner-second">
+    <a class="hero-bg-img hero-bg-right" href="{{ section.settings.button_link_second }}">
+      <div class="hero-inner">
+        <div class="hero-inner-left onest-light">
+          {{ section.settings.description_second }}
+        </div>
+        <div class="hero-inner-right onest-medium">
+          {{ section.settings.button_text_second }}
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+
+{% style %}
+  .hero-wrapper {
+    width: 100%;
+    display: block;
+    padding: 10px 40px 20px 40px;
+  }
+
+  .hero-banner-second {
+    display: none;
+  }
+
+  .onest-light {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
+  .onest-normal {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .onest-medium {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .hero-banner-title {
+    font-size: {{ section.settings.mobile_title_size }}px;
+    width: 100%;
+    text-align: center;
+    line-height: normal;
+    color: {{ section.settings.title_color }};
+    margin-top: 3%;
+  }
+  .hero-link-cover {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+  }
+  
+  .hero-link-cover:hover  {
+    text-decoration: underline;
+  }
+  
+  .hero-banner {
+    width: 100%;
+    height: 70vh;
+  }
+  
+  .hero-bg-img {
+    border-radius: 25px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .hero-bg-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.5s ease;
+  }
+
+  .hero-bg-left::before {
+    background: url({{ section.settings.mobile_background_image | default: section.settings.background_image | image_url }});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .hero-bg-right::before {
+    background: url({{ section.settings.background_image_second | image_url }});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .hero-bg-img:hover::before {
+    transform: scale(1.1);
+  }
+
+  .hero-inner {
+    display: flex;
+    flex-direction: {% if section.settings.mobile_button_position == 'spread-reverse' %}column-reverse{% else %}column{% endif %};
+    justify-content: {% if section.settings.mobile_button_position == 'spread' or section.settings.mobile_button_position == 'spread-reverse' %}space-between{% else %}{{ section.settings.mobile_button_position | default: 'end' }}{% endif %};
+    align-items: center;
+    padding: 20px 25px 20px;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero-inner-left {
+    line-height: 100%;
+    text-align: center;
+    font-size: {{ section.settings.description_size }}px;
+    color: {{ section.settings.description_color }};
+    font-style: {{ section.settings.description_style | default: 'normal' }};
+    font-weight: {{ section.settings.description_weight | default: '200' }};
+  }
+  .hero-inner-right {
+    transition: all 0.2s ease;
+    font-size: {{ section.settings.button_size }}px;
+    {% if section.settings.button_style == 'filled' %}
+      background-color: {{ section.settings.button_bg_color | default: '#000000' }};
+      color: {{ section.settings.button_text_color | default: '#FFFFFF' }};
+      padding: 10px 20px;
+      margin-top: {% if section.settings.mobile_button_position contains 'spread' %}0{% else %}20px{% endif %};
+      text-align: center;
+      border-radius: {% if section.settings.button_shape == 'rounded' %}25px{% else %}0{% endif %};
+    {% else %}
+      color: {{ section.settings.button_text_color | default: '#000000' }};
+    {% endif %}
+  }
+
+  .hero-bg-img:hover .hero-inner-right {
+    {% if section.settings.button_style == 'filled' %}
+      background-color: {{ section.settings.button_hover_bg_color | default: section.settings.button_bg_color | default: '#000000' }};
+      color: {{ section.settings.button_hover_text_color | default: section.settings.button_text_color | default: '#FFFFFF' }};
+    {% else %}
+      text-decoration: underline;
+    {% endif %}
+  }
+
+  @media screen and (min-width: 756px) {
+    .hero-banner-title {
+      font-size: {{ section.settings.desktop_title_size }}px;
+      width: 100%;
+      text-align: center;
+      line-height: normal;
+      color: {{ section.settings.title_color }};
+      margin-top: 2%;
+    }
+    .hero-wrapper {
+      padding: 20px 40px;
+    }
+    .hero-banner {
+      height: 60vh;
+    }
+    .hero-inner {
+      padding: 50px;
+      {% case section.settings.desktop_content_position %}
+        {% when 'top-left-stack' %}
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+        {% when 'top-right-stack' %}
+          flex-direction: column;
+          align-items: flex-end;
+          justify-content: flex-start;
+        {% when 'bottom-left-stack' %}
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-end;
+        {% when 'bottom-right-stack' %}
+          flex-direction: column;
+          align-items: flex-end;
+          justify-content: flex-end;
+        {% when 'top-center-stack' %}
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+        {% when 'center-center-stack' %}
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        {% when 'bottom-center-stack' %}
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-end;
+        {% when 'spread-top' %}
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: space-between;
+        {% when 'spread-bottom' %}
+          flex-direction: row;
+          align-items: flex-end;
+          justify-content: space-between;
+        {% when 'spread-top-reverse' %}
+          flex-direction: row-reverse;
+          align-items: flex-start;
+          justify-content: space-between;
+        {% when 'spread-bottom-reverse' %}
+          flex-direction: row-reverse;
+          align-items: flex-end;
+          justify-content: space-between;
+      {% endcase %}
+    }
+    .hero-inner-left {
+      width: 400px;
+      line-height: 100%;
+      text-align: {% if section.settings.desktop_content_position contains 'center' or section.settings.desktop_content_position contains 'reverse' %}center{% else %}left{% endif %};
+    }
+    .hero-inner-right {
+      width: {% if section.settings.desktop_content_position contains 'right-stack' %}400px{% else %}auto{% endif %};
+    }
+    .hero-bg-left::before {
+      background: url({{ section.settings.background_image | image_url }});
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  @media screen and (min-width: 2000px) {
+    .hero-wrapper {
+      display: flex;
+      padding: 20px 40px;
+    }
+
+    .hero-banner {
+      width: 50%;
+      height: 70vh;
+    }
+
+    .hero-banner-second {
+      display: block;
+    }
+
+    .hero-bg-left {
+      border-radius: 25px 0 0 25px;
+    }
+
+    .hero-bg-right {
+      border-radius: 0 25px 25px 0;
+    }
+
+    .hero-inner-left {
+      width: 400px;
+    }
+  }
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "Hero Banner",
+  "settings": [
+    {
+      "type": "header",
+      "content": "First Banner Content"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "LEGENDARY COLLECTION"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Our iconic collection of Western Wear has you covered for all your outdoor adventures"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Shop now"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image (Desktop)"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_background_image",
+      "label": "Background Image (Mobile - Optional)",
+      "info": "If not set, will use desktop image"
+    },
+    {
+      "type": "header",
+      "content": "Second Banner Content (XL Screens)"
+    },
+    {
+      "type": "text",
+      "id": "title_second",
+      "label": "Title",
+      "default": "FEATURED COLLECTION"
+    },
+    {
+      "type": "textarea",
+      "id": "description_second",
+      "label": "Description",
+      "default": "Discover our latest arrivals perfect for your next adventure"
+    },
+    {
+      "type": "text",
+      "id": "button_text_second",
+      "label": "Button Text",
+      "default": "Shop now"
+    },
+    {
+      "type": "url",
+      "id": "button_link_second",
+      "label": "Button Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image_second",
+      "label": "Background Image"
+    },
+    {
+      "type": "header",
+      "content": "Typography Settings"
+    },
+    {
+      "type": "header",
+      "content": "Title Font Sizes"
+    },
+    {
+      "type": "range",
+      "id": "mobile_title_size",
+      "min": 10,
+      "max": 22,
+      "step": 2,
+      "unit": "px",
+      "label": "Mobile Title Size",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "desktop_title_size",
+      "min": 32,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "label": "Desktop Title Size",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "description_size",
+      "min": 14,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "label": "Description Size",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "button_size",
+      "min": 14,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Button Text Size",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Color Settings"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "select",
+      "id": "mobile_button_position",
+      "label": "Mobile Button Position",
+      "options": [
+        {
+          "value": "end",
+          "label": "Bottom"
+        },
+        {
+          "value": "start",
+          "label": "Top"
+        },
+        {
+          "value": "spread",
+          "label": "Spread (Space Between)"
+        },
+        {
+          "value": "spread-reverse",
+          "label": "Spread Reverse"
+        }
+      ],
+      "default": "end"
+    },
+    {
+      "type": "select",
+      "id": "desktop_content_position",
+      "label": "Desktop Content Position",
+      "options": [
+        {
+          "value": "top-left-stack",
+          "label": "Top Left - Stacked"
+        },
+        {
+          "value": "top-right-stack",
+          "label": "Top Right - Stacked"
+        },
+        {
+          "value": "bottom-left-stack",
+          "label": "Bottom Left - Stacked"
+        },
+        {
+          "value": "bottom-right-stack",
+          "label": "Bottom Right - Stacked"
+        },
+        {
+          "value": "top-center-stack",
+          "label": "Top Center - Stacked"
+        },
+        {
+          "value": "center-center-stack",
+          "label": "Center - Stacked"
+        },
+        {
+          "value": "bottom-center-stack",
+          "label": "Bottom Center - Stacked"
+        },
+        {
+          "value": "spread-top",
+          "label": "Spread Top - Copy Left, Button Right"
+        },
+        {
+          "value": "spread-bottom",
+          "label": "Spread Bottom - Copy Left, Button Right"
+        },
+        {
+          "value": "spread-top-reverse",
+          "label": "Spread Top - Button Left, Copy Right"
+        },
+        {
+          "value": "spread-bottom-reverse",
+          "label": "Spread Bottom - Button Left, Copy Right"
+        }
+      ],
+      "default": "bottom-left-stack"
+    },
+    {
+      "type": "select",
+      "id": "description_style",
+      "label": "Description Font Style",
+      "options": [
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "italic",
+          "label": "Italic"
+        }
+      ],
+      "default": "normal"
+    },
+    {
+      "type": "select",
+      "id": "description_weight",
+      "label": "Description Font Weight",
+      "options": [
+        {
+          "value": "200",
+          "label": "Light"
+        },
+        {
+          "value": "400",
+          "label": "Regular"
+        },
+        {
+          "value": "600",
+          "label": "Bold"
+        }
+      ],
+      "default": "200"
+    },
+    {
+      "type": "header",
+      "content": "Button Styling"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Button Style",
+      "options": [
+        {
+          "value": "text",
+          "label": "Text Only"
+        },
+        {
+          "value": "filled",
+          "label": "Filled Background"
+        }
+      ],
+      "default": "text"
+    },
+    {
+      "type": "select",
+      "id": "button_shape",
+      "label": "Button Shape (when filled)",
+      "options": [
+        {
+          "value": "square",
+          "label": "Square"
+        },
+        {
+          "value": "rounded",
+          "label": "Rounded"
+        }
+      ],
+      "default": "rounded"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Button Background Color (when filled)",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_bg_color",
+      "label": "Button Hover Background Color (when filled)",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_text_color",
+      "label": "Button Hover Text Color (when filled)",
+      "default": "#FFFFFF"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Image",
+      "category": "Hero"
+    }
+  ]
+}
+{% endschema %}

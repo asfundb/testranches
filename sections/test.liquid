@@ -1,0 +1,223 @@
+{{ 'section-test.css' | asset_url | stylesheet_tag }}
+
+{% javascript %}
+const slider = document.querySelector('.brands-slider__track');
+const prevBtn = document.querySelector('.brands-slider__prev');
+const nextBtn = document.querySelector('.brands-slider__next');
+let cardWidth, cardMargin, cardMarginValue, totalCardWidth;
+
+function calculateCardDimensions() {
+  const card = document.querySelector('.brand');
+  cardWidth = card.offsetWidth;
+  cardMargin = window.getComputedStyle(card).marginRight;
+  cardMarginValue = parseInt(cardMargin);
+  totalCardWidth = cardWidth + cardMarginValue * 2;
+}
+
+function handleResize() {
+  calculateCardDimensions();
+
+  if (window.innerWidth > 768) {
+    slider.style.transform = 'none';
+  } else {
+    slider.style.transform = `translateX(${currentPosition}px)`;
+  }
+}
+
+calculateCardDimensions(); // Initial calculation
+window.addEventListener('resize', handleResize); // Recalculate on window resize
+let currentPosition = 0;
+let currentSlide = 0;
+
+function updateButtonVisibility() {
+  if (currentSlide === 0) {
+    prevBtn.querySelector('img').classList.add('hidden');
+  } else {
+    prevBtn.querySelector('img').classList.remove('hidden');
+  }
+
+  const maxSlide = Math.floor(slider.scrollWidth / totalCardWidth) - 1;
+  if (currentSlide === maxSlide) {
+    nextBtn.querySelector('img').classList.add('hidden');
+  } else {
+    nextBtn.querySelector('img').classList.remove('hidden');
+  }
+}
+
+prevBtn.addEventListener('click', () => {
+  if (currentSlide === 0) {
+    console.log("back to the first slide");
+    return;
+  }
+
+  currentSlide--;
+  currentPosition += totalCardWidth;
+  slider.style.transform = `translateX(${currentPosition}px)`;
+  updateButtonVisibility();
+});
+
+nextBtn.addEventListener('click', () => {
+  const maxSlide = Math.floor(slider.scrollWidth / totalCardWidth) - 1;
+  if (currentSlide === maxSlide) {
+    console.log("end of the line");
+    return;
+  }
+
+  currentSlide++;
+  currentPosition -= totalCardWidth;
+  slider.style.transform = `translateX(${currentPosition}px)`;
+  updateButtonVisibility();
+});
+
+// Initial button visibility
+updateButtonVisibility();
+{% endjavascript %}
+
+<div class="brand-slider">
+  <div class="brands-slider__title">SHOP BY BRANDS</div>
+  <div class="brands-slider__carousel">
+    <div class="brands-slider__track">
+      {% if section.settings.vendor_1 != blank %}
+        <div class="brand">
+          <a href="/collections/{{ section.settings.vendor_1| url_escape }}">
+            <img
+              src="{{ section.settings.vendor_1_image | img_url: '300x' }}"
+              alt="{{ section.settings.vendor_1 }}"
+              loading="lazy"
+            >
+            <div class="brand-title">{{ section.settings.vendor_1 }}</div>
+          </a>
+        </div>
+      {% endif %}
+
+      {% if section.settings.vendor_2 != blank %}
+        <div class="brand">
+          <a href="/collections/{{ section.settings.vendor_2 | url_escape }}">
+            <img
+              src="{{ section.settings.vendor_2_image | img_url: '300x' }}"
+              alt="{{ section.settings.vendor_2 }}"
+              loading="lazy"
+            >
+            <div class="brand-title">{{ section.settings.vendor_2 }}</div>
+          </a>
+        </div>
+      {% endif %}
+
+      {% if section.settings.vendor_3 != blank %}
+        <div class="brand">
+          <a href="/collections/{{ section.settings.vendor_3 | url_escape }}">
+            <img
+              src="{{ section.settings.vendor_3_image | img_url: '300x' }}"
+              alt="{{ section.settings.vendor_3 }}"
+              loading="lazy"
+            >
+            <div class="brand-title">{{ section.settings.vendor_3 }}</div>
+          </a>
+        </div>
+      {% endif %}
+
+      {% if section.settings.vendor_4 != blank %}
+        <div class="brand">
+          <a href="/collections/{{ section.settings.vendor_4 | url_escape }}">
+            <img
+              src="{{ section.settings.vendor_4_image | img_url: '300x' }}"
+              alt="{{ section.settings.vendor_4 }}"
+              loading="lazy"
+            >
+            <div class="brand-title">{{ section.settings.vendor_4 }}</div>
+          </a>
+        </div>
+      {% endif %}
+
+      {% if section.settings.vendor_5 != blank %}
+        <div class="brand">
+          <a href="/collections/{{ section.settings.vendor_5| url_escape }}">
+            <img
+              src="{{ section.settings.vendor_5_image | img_url: '300x' }}"
+              alt="{{ section.settings.vendor_5 }}"
+              loading="lazy"
+            >
+            <div class="brand-title">{{ section.settings.vendor_5 }}</div>
+          </a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+  <div class="brands-slider__nav">
+    <button class="brands-slider__prev" aria-label="Previous slide">
+      <img class="brands-slider__prev-icon" src="https://cdn.shopify.com/s/files/1/0262/2636/0383/files/chevron-left.svg?v=1714202186">
+    </button>
+    <button class="brands-slider__next" aria-label="Next slide">
+      <img class="brands-slider__next-icon" src="https://cdn.shopify.com/s/files/1/0262/2636/0383/files/chevron-right.svg?v=1714202186">
+    </button>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Brand Slider",
+  "settings": [
+     {
+      "type": "image_picker",
+      "id": "vendor_1_image",
+      "label": "Vendor 1 Image"
+    },
+    {
+      "type": "text",
+      "id": "vendor_1",
+      "label": "Vendor 1",
+      "default": "CARRHART"
+    },
+     {
+      "type": "image_picker",
+      "id": "vendor_2_image",
+      "label": "Vendor 2 Image"
+    },
+    {
+      "type": "text",
+      "id": "vendor_2",
+      "label": "Vendor 2",
+      "default": "ARIAT"
+    },
+     {
+      "type": "image_picker",
+      "id": "vendor_3_image",
+      "label": "Vendor 3 Image"
+    },
+    {
+      "type": "text",
+      "id": "vendor_3",
+      "label": "Vendor 3",
+      "default": "STS RANCH"
+    },
+     {
+      "type": "image_picker",
+      "id": "vendor_4_image",
+      "label": "Vendor 4 Image"
+    },
+    {
+      "type": "text",
+      "id": "vendor_4",
+      "label": "Vendor 4",
+      "default": "WOLFPACK"
+    },
+     {
+      "type": "image_picker",
+      "id": "vendor_5_image",
+      "label": "Vendor 5 Image"
+    },
+    {
+      "type": "text",
+      "id": "vendor_5",
+      "label": "Vendor 5",
+      "default": "LEVI"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Brand Slider",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
